@@ -6,12 +6,9 @@
 
 The following script extracts the main text only from a given paper. This means that I will omit any figures, diagram, images and their descriptions in the paper.
 ```
-CUDA_VISIBLE_DEVICES=0 python ocr.py "path/to/filename.pdf" \
-      --output-dir "path/to/output" \
+CUDA_VISIBLE_DEVICES=0 python ocr.py "path/to/filename.pdf" "path/to/output_dir" \
 ```
-
-`run_ocr.sh` is a convenient script to convert all files within an input directory.
 
 # 2. Information Retrieval
 
-(To be updated)
+To extract the RESULTS section and parse its all subsections within a paper, refer to `run.sh` script.
