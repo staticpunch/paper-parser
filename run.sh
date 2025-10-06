@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PDF_FILE="./testdata/pdf/05.pdf"
+PDF_FILE="./testdata/pdf/t03.pdf"
 OUTPUT_DIR="./output"
 
 base_name=$(basename "$PDF_FILE")
