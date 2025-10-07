@@ -5,4 +5,7 @@ description = "Add your description here"
 requires-python = ">=3.12"
 dependencies = [
     "docling>=2.55.1",
+    "jupyter>=1.1.1",
+    "lab>=8.5",
+    "vllm>=0.11.0",
 ]
