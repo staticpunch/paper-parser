@@ -1,0 +1,253 @@
+**[START OF ARTICLE]**
+```
+## Competition between two HUSH complexes orchestrates the immune response to retroelement invasion
+
+## Graphical abstract
+
+## Highlights
+
+## Authors
+
+Joshua Miguel C. Danac, Rachael E. Matthews, Akhila Gungi, ..., Robin Antrobus, Richard T. Timms, Iva A. Tchasovnikarova
+
+## Correspondence
+
+## In brief
+
+The HUSH complex, composed of TASOR, MPP8, and Periphilin, facilitates epigenetic silencing of retroelements. Danac et al. now describe HUSH2, centered around the TASOR paralog TASOR2, which represses interferonstimulated genes. Competition between TASOR and TASOR2 for the shared subunits MPP8 and Periphilin couples retroelement silencing to the immune response.
+
+## Competition between two HUSH complexes orchestrates the immune response to retroelement invasion
+
+## SUMMARY
+
+The human silencing hub (HUSH) preserves genome integrity through the epigenetic repression of invasive genetic elements. However, despite our understanding of HUSH as an obligate complex of three subunits, only loss of MPP8 or Periphilin, but not TASOR, triggers interferon signaling following derepression of endogenous retroelements. Here, we resolve this paradox by characterizing a second HUSH complex that shares MPP8andPeriphilin but assembles around TASOR2, an uncharacterized paralog of TASOR. Whereas HUSH represses LINE-1 retroelements marked by the repressive histone modification H3K9me3, HUSH2 is recruited by the transcription factor IRF2 to repress interferon-stimulated genes. Mechanistically, HUSH-mediated retroelement silencing sequesters the limited pool of the shared subunits MPP8 and Periphilin, preventing TASOR2 from forming HUSH2 complexes and hence relieving the HUSH2-mediated repression of interferon-stimulated genes. Thus, competition between two HUSH complexes intertwines retroelement silencing with the induction of an immune response, coupling epigenetic and immune aspects of genome defense.
+
+## INTRODUCTION
+
+Mobile genetic elements, such as retroviruses and transposable elements (TEs), threaten the integrity and stability of the genome. 1 The human silencing hub (HUSH) complex constitutes an epigenetic mechanism of defense against invasive genetic elements. 2 HUSH comprises three obligate subunits: TASOR, MPP8, and Periphilin. 3 TASOR acts as a central scaffold that recruits MPP8, 4 a chromodomain-containing protein that recognizes the repressive histone modification H3K9me3, 5,6 and Periphilin, an intrinsically disordered protein that binds nascent RNA from actively transcribed genes. 7,8 Although HUSH can silence exogenous retroviruses 9,10 and synthetic transgenes, 3,7 its primary genomic targets are considered to be evolutionary young LINE-1 (L1) retroelements that are still capable of transposition 11,12 and the long terminal exons of Kr € uppel-associated box-zinc-finger protein (KRABZNF) genes. 3 How HUSH identifies its target loci remains unclear, but a critical feature appears to be the presence of long transcriptional units devoid of introns. 7 Mechanistically, tran- scriptional silencing is achieved through the recruitment of the chromatin remodeler MORC2 13 and the H3K9 methyltransferase SETDB1, 3 which together establish a heterochromatic environment. The importance of HUSH-mediated genome defense is underscored by the discovery of viral antagonism of this pathway, with the HIV-2 accessory protein Vpx targeting TASOR for proteasomal degradation. 14,15
+
+A second line of defense against invasive retroelements is the induction of an immune response. Recognition of retroelementderived double-stranded RNA (dsRNA) by the pattern recognition receptors (PRRs) melanoma differentiation-associated protein 5 (MDA-5) and retinoic acid-inducible gene I (RIG-I) triggers an innate immune response by inducing interferon (IFN) signaling, 16,17 potentiating the presentation of retroelementderived antigens on major histocompatibility complex class I (MHC class I) molecules to promote an adaptive immune response. 18 Indeed, the derepression of TEs that follows ablation of HUSH-mediated silencing is thought to trigger IFN signaling. 19 However, despite our understanding of HUSH as an obligate TASOR-MPP8-Periphilin complex, 3,4 only loss of
+
+MPP8 or Periphilin-but not TASOR-induces an IFN response. 19 The discordance between these phenotypes suggests an unappreciated role for MPP8 and Periphilin outside of the canonical HUSH complex.
+
+Here, we reconcile these observations by identifying a second HUSH complex organized by TASOR2, an uncharacterized paralog of TASOR. The domain architecture of TASOR2 is similar to that of TASOR, and structural modeling predicts that it engages MPP8 and Periphilin in an analogous manner. Unexpectedly, we find that HUSH2 localizes to the promoters of interferonstimulated genes (ISGs), where it acts as a repressor. As a result of competition between TASOR and TASOR2 for the shared subunits MPP8 and Periphilin, increased demand for HUSH-mediated silencing restricts the assembly of HUSH2 complexes and hence relieves the repression of ISGs. Thus, interplay between HUSH and HUSH2 couples the recognition and silencing of foreign genetic elements with the induction of an immune response, bridging epigenetic and immune facets of genomic defense against invasive elements.
+
+## RESULTS
+
+## TASOR2 binds MPP8 and Periphilin to form a HUSH2 complex
+
+To examine potential TASOR-independent functions of the HUSH subunits MPP8 and Periphilin, we sought to identify additional binding partners of both proteins by co-immunoprecipitation. In each case, mass spectrometry analysis of nuclear immunoprecipitates identified the other HUSH complex components, plus known accessory factors such as the zinc finger protein NP220 10 (Figures 1A and 1B; Table S1). Notably, TASOR2, a paralog of TASOR with no known function, was also identified as a high-confidence interactor of both MPP8 and Periphilin (Figures 1A and 1B), and we were readily able to validate interactions between TASOR2, MPP8, and Periphilin by co-immunoprecipitation of endogenous TASOR2 followed by immunoblot (Figure 1C).
+
+TASOR2 is completely uncharacterized. Its domain architecture closely resembles that of TASOR, with the canonical isoform (UniProt: Q5VWN6) comprising SPOC, DomI, and DomII/PIN domains, although its central disordered region is significantly larger (Figure 1D). However, there is also evidence supporting expression of longer TASOR2 isoforms containing an N-terminal pseudo-PARP domain (Figures 1D and S1A-S1C). Structural modeling with AlphaFold2 20 suggests that the TASOR2 domains are likely to adopt three-dimensional structures highly similar to the corresponding domains in TASOR (Figure 1E).
+
+TASOR lies at the heart of the HUSH complex: its SPOC and DomI domains bind MPP8, 4 and a pair of alpha-helices mediate the association with Periphilin. 8 The presence of both of these elements in TASOR2 suggested that TASOR2 might organize an analogous HUSH2 complex, which was strongly supported by AlphaFold-Multimer 21 predictions (Figure 1F). Experimentally, we demonstrated that a construct comprising the TASOR2 SPOC and DomI domains (residues 216-528) pulled down MPP8 (Figure 1G). Furthermore, as is the case for TASOR, 3 depletion of TASOR2 reduced the protein levels of MPP8 and Periphilin (Figure S1D). Altogether, these data suggest that TASOR2 lies at the heart of a paralogous HUSH2 complex, which also comprises MPP8 and Periphilin (Figure 1H).
+
+## HUSH2 localizes to the promoters of ISGs
+
+Next, we sought to define the genomic targets of the HUSH2 complex. CUT&amp;RUN analysis of endogenous TASOR2 occupancy in K562 cells identified 346 high-confidence binding sites (Figures 2A, S2A, and S2B; Table S2). Notably, MPP8 and Periphilin colocalized with TASOR2 at these sites (Figures 2A, 2C, S2A, and S2C). TASOR and TASOR2 occupancy was mutually exclusive (Figure S2B): in complete contrast to the broad distribution of TASOR (HUSH) across L1 elements 11 and the terminal exons of KRAB-ZNF genes marked by H3K9me3 3 (Figures 2B and 2C), TASOR2 binding sites were overwhelmingly composed of sharp peaks at gene promoters coated with histone modifications associated with active transcription (Figures 2A-2C, S2D, and S2E).
+
+Analysis of the genes downstream of TASOR2 binding sites revealed dramatic overrepresentation of two functional classes: ISGs and KRAB-ZNF genes (Figures 2D-2F). High-confidence TASOR2 peaks were found at the transcriptional start sites (TSSs) of a variety of genes involved in interferon signaling ( IFI35 , IRF2 , and STAT2 ), antiviral defense ( IFI6 , ISG15 , DDX60L , ZC3HAV1 , TRIM5 , and SAMD9 ), and antigen presentation by MHC class I molecules ( B2M, TAP1 , TAP2 , TAPBP , and PSMB9 ) (Figure 2G and Table S2). TASOR2 was also found at the promoters of KRAB-ZNF genes (Figure 2H and Table S2), the protein products of which also function in genome defense by mediating the sequence-specific recruitment of KAP1 (also known as TRIM28) to diverse TEs. 22 Supporting the notion of a HUSH2 complex, MPP8 and Periphilin binding at TASOR2 sites was diminished in TASOR2 KO cells (Figures S2A and S2C). Suggesting differential recruitment mechanisms at different classes of HUSH2 targets, Periphilin occupancy was completely lost from TASOR2 sites in TASOR2 KO cells, whereas MPP8 was
+
+(D-H) HUSH2 binds the promoters of ISGs and KRAB-ZNF genes. The majority of TASOR2 binding sites are found at promoters (defined as within 1 kb of a TSS) (D); the downstream genes are highly enriched for ISGs and KRAB-ZNF genes, as assessed by GO term analysis (E) and DAVID functional gene annotation (F). A range of example ISGs and KRAB-ZNF genes are shown in (G) and (H), respectively.
+
+selectively lost at the majority of ISG targets but not KRAB-ZNF gene promoters (Figures S2F and S2G). Overall, these data demonstrate that TASOR and TASOR2 define two distinct HUSH complexes that share subunit composition but operate at non-overlapping genomic sites.
+
+## IRF2 recruits HUSH2 to ISGs
+
+To investigate how HUSH2 localizes to its target sites, we examined the DNA sequence underlying TASOR2 binding sites using motif enrichment analysis. Analysis using the HOMER algorithm 23 identified dramatic enrichment for a set of related interferon-sensitive response element (ISRE) motifs (Figure 3A). ISRE motifs are recognized by transcription factors of the interferon regulatory factor (IRF) family, which raised the possibility that HUSH2 is recruited to ISGs through an interaction with an IRF protein. Intriguingly, the IRF2 consensus site was the most highly enriched motif identified by HOMER (Figure 3A), and large-scale interactome profiling has identified IRF2 as a TASOR2 binding partner in multiple cell lines 24,25 (Figure 3B). Thus, we examined the hypothesis that an interaction between IRF2 and TASOR2 recruits HUSH2 to ISGs.
+
+First, we validated that IRF2 interacts with TASOR2 by coimmunoprecipitation (Figure 3C). Then, using chromatin immunoprecipitation sequencing (ChIP-seq) data from the ENCODE project, 26 we found that IRF2 co-occupies the majority of TASOR2-bound promoters (Figures 3D, S3A, and S3B); however, the IRF2 signal was far stronger across the ISG targets compared with the KRAB-ZNF targets (Figure 3E). Finally, we compared TASOR2 occupancy in wild-type vs. IRF2 KO cells (Figure S3C) by CUT&amp;RUN. In the absence of IRF2, TASOR2 binding was lost at ISG promoters but not at KRAB-ZNF gene promoters (Figure 3F). Thus, our data suggest that an IRF2-TASOR2 interaction recruits HUSH2 to the promoters of ISGs, whereas an alternative mechanism (potentially via MPP8 as suggested by
+
+(D-F) IRF2 recruits HUSH2 to the promoters of ISGs. IRF2 co-occupies promoters bound by TASOR2 (D), including ISGs and KRAB-ZNF genes (E). At the promoters of ISGs and KRAB-ZNFs targeted by TASOR2, CUT&amp;RUN analysis in IRF2 knockout cells revealed loss of TASOR2 from ISGs but not KRAB-ZNF genes (F). (G and H) Loss of IRF2 abrogates expression of ISGs targeted by HUSH2. K562 cells depleted of IRF2 by CRISPRi were analyzed by RNA-seq (G); 41 genes exhibited significant downregulation, 16 of which were bound by TASOR2 (highlighted in green). (H) Individual validation by RT-qPCR, showing mean ± SD of three technical replicates (* p &lt; 0.05, *** p &lt; 0.001 vs. sgAAVS1; unpaired t tests with Holm-Sidak correction for multiple comparisons).
+
+the data in Figure S2F) mediates HUSH2 localization to KRABZNF promoters.
+
+## HUSH2 counteracts IRF2 to repress ISGs
+
+The localization of TASOR2 to the promoters of ISGs suggested that HUSH2 might cooperate with IRF2 to regulate ISG expression. To interrogate this relationship, we depleted cells of IRF2 by CRISPR interference (CRISPRi) (Figure S3D) and assessed the impact on the transcriptome by RNA sequencing (RNAseq) (Figure 3G). Consistent with previous studies characterizing IRF2 as a constitutively expressed transcription factor required for basal expression of its target genes, 27,28 loss of IRF2 resulted in significant downregulation of 41 genes (Figure 3G; Table S3), the great majority of which (36/41, 88%) were bona fide ISGs. 29 Intersection with our CUT&amp;RUN data revealed that 16 of the 41 downregulated genes (39%) were bound by TASOR2 (Figure 3G).
+
+Further supporting the notion of a functional relationship between IRF2 and HUSH2, quantitative reverse transcription PCR (RT-qPCR) analysis at example ISGs bound by both TASOR2 and IRF2 revealed that while loss of IRF2 severely reduced ISG expression (Figure 3H), depletion of TASOR2 (Figure 3I) resulted in their upregulation (Figure 3J). This did not occur in cells that were depleted for both TASOR2 and IRF2 (Figure 3J), suggesting that HUSH2 counteracts the IRF2-dependent transcription of these ISGs. Loss of IRF2 did not diminish the expression of KRAB-ZNF genes bound by TASOR2 (Figures S3E and S3F), suggesting that IRF2 is not relevant for HUSH2 function at these sites. Thus, consistent with the notion of HUSH complexes acting as epigenetic repressors, recruitment of HUSH2 to ISGs results in their repression.
+
+## LossofTASOR2,butnotTASOR,inducesISGexpression
+
+The HUSH complex has previously been suggested to act as a ''gatekeeper'' of the IFN response: upon abrogation of HUSH function, the resulting derepression of endogenous L1 retrotransposons is postulated to generate dsRNAs, which are sensed by MDA-5 and RIG-I, triggering IFN signaling. 19 However, while genetic ablation of either MPP8 or Periphilin potently induces ISG expression, loss of TASOR has little effect. 19 This observation is difficult to reconcile with the notion that IFN signaling is induced following the transcriptional derepression of repetitive elements, as loss of any HUSH subunit resulted in equivalent activation of L1 expression (Figure S4A), consistent with a range of previous studies. 4,11,12,19,30 By contrast, these data would be fully concordant with a TASOR-independent role for MPP8 and Periphilin in the repression of ISGs as part of HUSH2. Thus, we set out to test the hypothesis that the induction of ISG expression observed upon depletion of MPP8 and Periphilin is not due to impaired HUSH function but rather impaired HUSH2 function.
+
+To do this, we sought to directly compare the functional effects of individual depletion of TASOR, TASOR2, MPP8, and Periphilin on the transcriptome of K562 cells (Figures S4B and S4C). Loss of TASOR resulted in derepression of known HUSH targets, including the clustered KRAB-ZNF 3 and protocadherin 31 genes, but had no effect on ISG expression; by contrast, depletion of TASOR2 upregulated the expression of
+
+ISGs and a subset of KRAB-ZNF genes (Figure 4A; Table S4). Indeed, gene set enrichment analysis confirmed an immune response signature in TASOR2-, MPP8-, and Periphilindepleted cells that was absent from TASOR-depleted cells (Figure 4B). Strikingly, the genes upregulated upon depletion of TASOR or TASOR2 were non-overlapping subsets of the genes upregulated upon depletion of either MPP8 or Periphilin, corresponding to HUSHand HUSH2-repressed genes, respectively (Figures 4C, 4D, S4D, and S5; Table S5). The upregulated ISGs appeared specific to antiviral defense pathways, including the cytosolic RNA sensors IFIH1 (encoding MDA-5), DDX60L , 32 and IFIT1 33 and antiviral factors that restrict RNA viruses ( IFI6 , 34 SAMD9 , 35 and OAS3 36 ). TASOR2 was bound to the promoters of these genes (Figure S4E), implicating HUSH2 as a direct repressor of ISG expression. Several upregulated ISGs were also part of the MHC class I antigen presentation pathway (Figure S4F), and, consistent with a specific role for HUSH2 in the repression of ISGs, depletion of either TASOR2, MPP8, or Periphilin-but not TASOR-resulted in increased levels of MHC class I protein expression at the cell surface (Figures S4G and S4H). 37
+
+## Competition between HUSH and HUSH2 couples retrotransposon silencing to ISG induction
+
+With the knowledge that HUSH functions to defend the genome by repressing both exogenous retroviruses and endogenous retrotransposons, 3,11 the finding that HUSH2 represses ISGs and KRAB-ZNF genes-two crucial defense mechanisms against mobile genetic elements-was particularly intriguing. Given that the two HUSH complexes are inextricably linked by virtue of their shared subunits MPP8 and Periphilin, we hypothesized that the cell exploits competition between TASOR and TASOR2 to induce an immune response upon retroviral infection or retrotransposon activity. Specifically, we postulated that an increased requirement for HUSH-mediated genome defense would sequester MPP8 and Periphilin with TASOR, resulting in insufficient MPP8 and Periphilin to assemble HUSH2 complexes with TASOR2 and hence derepression of ISGs. Thus, competition between TASOR and TASOR2 for a limited pool of MPP8 and Periphilin would couple the silencing of invasive genetic elements to the induction of genes involved in the immune response.
+
+We began testing the predictions of this model by manipulating the relative levels of TASOR and TASOR2. Upon deletion of TASOR, CUT&amp;RUN analysis revealed a loss of MPP8 occupancy at HUSH target sites but accumulation at HUSH2 target sites (Figures 5A, 5C, S6A, and S6B), an effect that was recapitulated upon reanalysis of published MPP8 ChIP-seq data in TASOR KO cells 11 (Figures 5B and S6C). Similarly, we observed enhanced Periphilin occupancy at HUSH2 sites in TASOR KO cells (Figures 5C and S6D). On the other hand, in TASOR2 KO cells we observed increased MPP8 occupancy at HUSH target sites (Figure S6E), concomitant with decreased MPP8 binding at HUSH2 sites (Figures S2A and S2C). Next, while depletion of TASOR resulted in derepression of L1 elements, loss of TASOR2 resulted in hyper-repression of L1 elements (Figure S6F). 11,38 Lastly, overexpression of TASOR derepressed ISGs targeted by HUSH2 (Figures S6G and S6H), while
+
+overexpression of TASOR2 upregulated HUSH-repressed L1 elements (Figures S6I and S6J). Furthermore, our model predicts that a stoichiometric excess of MPP8 and Periphilin would relieve the competition between TASOR and TASOR2; indeed, we found both of these effects were rescued by exogenous expression of MPP8 and Periphilin (Figures S6G-S6J). Taken together, these findings suggest an antagonistic relationship between the function of HUSH and HUSH2.
+
+Wenext examined whether increased retrotransposon activity would relieve HUSH2-mediated repression of ISGs. We reasoned that increased L1 expression would sequester MPP8 and Periphilin into HUSH complexes, preventing the assembly of HUSH2 complexes and thus leading to ISG derepression. In support of this idea, overexpression of a full-length L1PA1 element activated an ISRE-GFP reporter construct in HEK293 cells 19 and resulted in the upregulation of endogenous ISGs in RPE-1 cells. 39 Similarly, we found that exogenous expression of an L1 reporter 7 resulted in the derepression of HUSH2-target ISGs (Figures 5D and 5E) without affecting the expression of TASOR (Figure 5D) or TASOR2 (Figure S6K). Critically, we found that the ISG induction observed upon L1 expression was reversed upon overexpression of exogenous MPP8 and Periphilin (Figures 5D and 5E). Our model also suggests why HIV-2 spe- cifically targets TASOR (rather than MPP8 or Periphilin): not only does Vpx-mediated degradation of TASOR abrogate HUSHmediated silencing, 14,15 expression of Vpx results in the hyperrepression of HUSH2-regulated ISGs (Figures 5F and 5G). These functional effects reflected changes in TASOR2 occupancy as assessed by CUT&amp;RUN: expression of L1 resulted in loss of TASOR2 from its binding sites, while expression of Vpx enhanced TASOR2 binding (Figures 5H and S6L). Altogether, we propose that HUSH-mediated repression of invasive genetic elements is functionally coupled to the release of ISGs from HUSH2-mediated repression through competition for a limited pool of the shared subunits MPP8 and Periphilin (Figure 6).
+
+## DISCUSSION
+
+Here, we identify a second HUSH complex that bridges epigenetic immunity and innate and adaptive immunity, two facets of cellular defense against invasive genetic elements. Despite the similarities between HUSH and HUSH2, which include the shared subunits MPP8 and Periphilin, the extensive structural homology between TASOR and TASOR2, and their common function as epigenetic repressors, these two complexes fulfill starkly different functions. Whereas HUSH represses young L1 elements through the
+
+(D and E) L1 overexpression relieves the HUSH2-mediated repression of ISGs. Following exogenous expression of a lentiviral L1 construct in K562 cells (D), RT-qPCR analysis revealed derepression across ISGs targeted by HUSH2 (E); notably, this effect was reversed upon concurrent overexpression of MPP8 and Periphilin. Plots show mean ± SD of three technical replicates (* p &lt;0.05, L1 vs. GFP; # p &lt;0.05, ## p &lt;0.01, L1 + MPP8 + Periphilin vs. L1, unpaired t test with HolmSidak correction for multiple comparisons).
+
+(F and G) Vpx-mediated degradation of TASOR (F) results in hyper-repression of ISGs targeted by HUSH2 (G). Plots show mean ± SD of three technical replicates (* p &lt; 0.05, ** p &lt; 0.01 Vpx vs. Mock, unpaired t test with Holm-Sidak correction for multiple comparisons).
+
+(H) The extent of HUSH-mediated silencing determines HUSH2 occupancy at target sites. CUT&amp;RUN analysis of endogenous TASOR2 revealed loss of TASOR2 occupancy upon L1 expression, consistent with MPP8 and Periphilin being diverted to HUSH complexes; conversely, degradation of TASOR via Vpx expression had the opposite effect, enhancing TASOR2 occupancy.
+
+repressive H3K9me3 modification, 3,11 HUSH2 localizes to the promoters of ISGs, where it antagonizes the IRF2-dependent transcription of antiviral response genes. These two roles are intertwined through competition for a limited pool of the shared sub- units MPP8 and Periphilin: an increased demand for retroelement silencing tips the balance in favor of HUSH at the expense of HUSH2, ensuring coincident activation of an immune response through the relief of ISG repression.
+
+TASOR and TASOR2 compete for a limited pool of MPP8 and Periphilin. When retroelement activity is low, sufficient levels of MPP8 and Periphilin are incorporated into HUSH2 complexes to allow repression of ISGs. A spike in retroelement activity increases the demand for HUSH-mediated silencing, sequestering MPP8 and Periphilin away from HUSH2 complexes and leading to derepression of HUSH2-bound ISGs.
+
+Our findings recontextualize several prior studies demonstrating that the activity of TEs induces innate immune responses. 16,17,19,39-41 Previously, this effect has been attributed to the detection of TE-derived RNAs by the PRRs RIG-I and MDA-5, but here, we show that competition between HUSH and HUSH2 directly couples retroelement sensing to the induction of ISGs. In contrast to classical PRRs, which recognize pathogen associated molecular patterns (PAMPs) and trigger JAK/STAT signaling to activate ISGs, 42 HUSHmediated silencing directly triggers the induction of ISGs by relieving their repression by HUSH2. It will be interesting to determine the evolutionary origins of TASOR and TASOR2 to assess whether the HUSH-HUSH2 axis could represent a more primitive mechanism to trigger antiviral gene expression in response to retroelement invasion. HUSH and HUSH2 also regulate the expression of KRAB-ZNF genes, which, through their ability to direct the epigenetic repression of TEs in a sequence-specific manner, serve as another arm of the defense response. 22,43
+
+Recruitment of HUSH to target sites is thought to depend on recognition of the H3K9me3 modification by the MPP8 chromodomain 3,44 and the binding of nascent transcripts by Periphilin. 7,8 As HUSH and HUSH2 target distinct genomic loci, however, it seems unlikely that MPP8 and Periphilin alone drive HUSH localization. For example, we show that IRF2 recruits HUSH2 to the promoters of ISGs but, intriguingly, not the promoters of KRAB-ZNF target genes, while the zinc finger protein NP220 directs HUSH to unintegrated retroviral DNA. 9,10 Thus, we speculate that other as yet unidentified sequence-specific transcription factors will also contribute to the localization of HUSH and HUSH2 to distinct target sites.
+
+How HUSH2-mediated repression is executed remains unclear. Given the absence of H3K9me3 at the promoters of ISGs targeted by HUSH2, it is unlikely that SETDB1 plays a role in prosecuting HUSH2-mediated repression. One possibility is that, like HUSH, HUSH2 cooperates with the nuclear exosome targeting complex (NEXT) to induce degradation of nascent transcripts. 45 Supporting the idea that RNA may play an important role, an interesting parallel between the two HUSH complexes is that, rather than being transcriptionally silenced, their targets maintain a basal level of expression. 4 Thus, future dissection of HUSH2 function may shed light on the molecular mechanisms underpinning epigenetic repression by both HUSH complexes.
+
+HUSHrepresents an attractive target for therapeutic inhibition. As part of a strategy dubbed ''shock and kill,'' 46 inhibition of HUSH could serve to purge the persistent pool of latent HIV-1 proviruses that necessitates lifelong antiretroviral therapy to prevent progression to AIDS. 47,48 Alternatively, in the context of cancer immunotherapy, derepression of TEs following inhibition of HUSH could enhance tumor immunogenicity and hence improve the efficacy of immune checkpoint blockade. 16 In each case, our findings suggest that the shared subunits MPP8 and Periphilin may represent the optimal targets, such that derepression of TEs or HIV-1 proviruses upon inhibition of HUSH activity is coupled with enhanced ISG induction and antigen presentation upon inhibition of HUSH2.
+
+## Limitations of the study
+
+Our study interrogates the competition between TASOR and TASOR2 in one cell line, K562 chronic myeloid leukemia cells, which are known to exhibit abnormally low levels of L1HS DNA methylation and higher expression of L1. 49 BecauseL1expression
+
+is variable across different cell types, 49,50 the precise dynamics of HUSH-HUSH2 competition may also vary. Furthermore, in our HUSH-HUSH2 competition experiments, L1 overexpression was performed using a full-length L1PA1 element driven by the spleen focus-forming virus (SFFV) promoter in place of its native 5 0 UTRto facilitate stronger expression; importantly, however, this L1 expression construct is still subject to HUSH-mediated silencing. 7 Finally, in our rescue experiments, we showed that exogenous expression of the shared subunits MPP8 and Periphilin alleviates the competition between TASOR and TASOR2. However, due to the interdependence of HUSH/HUSH2 subunits, we were unable to address the individual contributions of MPP8 and Periphilin.
+
+## STAR + METHODS
+
+Detailed methods are provided in the online version of this paper and include the following:
+
+## SUPPLEMENTAL INFORMATION
+
+Supplemental information can be found online at https://doi.org/10.1016/j. molcel.2024.06.020.
+
+We thank Joana Cerveira and her team at the School of Biological Sciences Flow Cytometry Core Facility, Kay Harnish at the Gurdon Institute NGS Facility, and Adam Reid and Ankit Verma at the Gurdon Institute Bioinformatics core. We are grateful to Julie Ahringer for critical reading of the manuscript, Paul Lehner for plasmids, and Emily Naden for helpful discussions. This work was supported by a Cancer Research UK Cambridge Centre studentship to J.M.C.D. and a Pemberton-Trinity fellowship to R.T.T. Research in the Tchasovnikarova laboratory is supported by Wellcome (092096) and Cancer Research UK (C6946/A14492).
+
+## AUTHOR CONTRIBUTIONS
+
+Conceptualization, I.A.T.; methodology, J.M.C.D. and I.A.T.; investigation, J.M.C.D., R.E.M., A.G., C.Q., R.T.T., and I.A.T.; formal analysis, J.M.C.D.,
+
+H.P., R.A., R.T.T., and I.A.T.; writing - original draft, J.M.C.D.; writing - review &amp; editing, J.M.C.D., R.T.T., and I.A.T.; supervision, I.A.T.; funding acquisition, J.M.C.D., R.T.T., and I.A.T.
+
+## DECLARATION OF INTERESTS
+
+The authors declare no competing interests.
+
+## REFERENCES
+
+## RESOURCE AVAILABILITY
+
+## Lead contact
+
+Further information and requests for resources and reagents should be directed to the lead contact, Iva Tchasovnikarova (it257@ cam.ac.uk).
+
+## Materials availability
+
+Resources generated in this study will be shared by the lead contact upon reasonable request.
+
+## Data and code availability
+
+## EXPERIMENTAL MODEL AND STUDY PARTICIPANT DETAILS
+
+## Cell culture
+
+K562 cells were purchased from ATCC (CCL-243). HeLa cells and HEK293ET cells were a kind gift from Prof. Paul Lehner (CITIID, University of Cambridge, UK). All cell lines were cultured in IMDM supplemented with 10% fetal bovine serum (FBS), penicillin/streptomycin (100 U/ml) and 2 mM glutamine, and were routinely tested for mycoplasma contamination (EZ PCR Mycoplasma Test Kit, Geneflow).
+
+## METHOD DETAILS
+
+## Generation of lentiviral expression vectors
+
+The lentiviral transfer plasmids pHRSIN-pSFFV-L1-iRFP-WPRE-pSV40-Blasticidin, 7 pHRSIN-pSFFV-mCherry-TASOR-WPREpPGK-Puromycin, 4 pHRSIN-pSFFV-FLAG-MPP8-WPRE-pPGK-Blasticidin, 4 pHRSIN-pSFFV-V5-Periphilin-WPRE-pPGK-Hygromycin, 8 pHRSIN-pSFFV-GFP-WPRE-pPGK-Hygromycin 3 and pHRSIN-pSFFV-Cas9-WPRE-pPGK-Hygromycin 13 were generous gifts from Prof. Paul Lehner (CITIID, University of Cambridge, UK). SPOC and DomI domains of TASOR2 (corresponding to residues 216-528 in UniProt A0A2R8YH03) were amplified from HeLa cDNA and cloned in pHRSIN-pSFFV-GFP-WPRE-pPGK-Hygromycin in place of GFP. Full-length TASOR, MPP8 and Periphilin were amplified from the relevant plasmids above, whereas TASOR2 and IRF2 were amplified from K562 cDNA, and cloned into the pKLV2-U6sgRNA-PGKpuro2ABFP-WPRE 52 (Addgene #67974, kindly deposited by Kosuke Yusa) lentiviral vector downstream of an SFFV promoter in place of the U6-sgRNA expression cassette. For CRISPRi,
+
+the lentiviral expression vector pHR-pEF1 a -ZIM3 KRAB -dCas9-P2A-Hygromycin was used, which was generated from pHR-UCOESFFV-Zim3-dCas9-P2A-Hygro 51 (Addgene #188768, kindly deposited by Marco Jost and Jonathan Weissman). All subcloning steps were performed using the Gibson assembly method (NEBuilder HiFi DNA Assembly Cloning Master Mix, NEB).
+
+## Lentivirus production
+
+HEK293ET cells were transfected using PolyJet In Vitro DNA Transfection Reagent (SignaGen Laboratories) with the relevant lentiviral transfer plasmid plus four packaging plasmids encoding Gag-Pol, Rev, Tat and VSV-G respectively. Viral supernatant was harvested 48 hours post-transfection and cell debris removed using a 0.45 m mfilter. Target cells were transduced by spinoculation at 800 x g for 1 hour. K562 cells were selected with 250 m g/ml hygromycin (ThermoFisher Scientific, #10687010), 10 m g/ml blasticidin (Stratech, #B4879) or 1 m g/ml puromycin (ThermoFisher Scientific, #A1113803) commencing 48 h post-transduction. For co-immunoprecipitation experiments, HeLa cells were selected with 50 m g/ml hygromycin.
+
+## Generation of knockout cell lines
+
+Oligonucleotides (IDT) for top and bottom strands of the sgRNA were phosphorylated with T4 PNK (NEB), annealed by heating to 95 /C14 C followed by slow cooling to room temperature, and then cloned into the lentiviral sgRNA expression vector pKLV2U6gRNA5(BbsI)-PGKpuro2ABFP-WPRE 52 (Addgene #67974, kindly deposited by Kosuke Yusa). K562 cells were transduced with pHRSIN-pSFFV-Cas9-pPGK-Hygromycin R and selected with hygromycin. Following selection, Cas9-expressing cells were transduced with pKLV2-pU6-sgRNA-pPGK-Puro-2A-BFP-WPRE (all sgRNA sequences are listed in Table S6) and selected with puromycin. The resulting population was single cell cloned, and, with the exception of TASOR2, for which there is no available antibody, knockout clones were validated by immunoblot. Successful gene disruption in TASOR2 knockout clones was confirmed by PCR (see Table S6 for primer sequences) and Sanger sequencing (Azenta) followed by TIDE analysis. 53
+
+## CRISPR interference
+
+sgRNA sequences were obtained from the Weissman CRISPRi library 65 (see Table S6 for details). Oligonucleotides (IDT) for top and bottom strands of the sgRNAs were cloned into pKLV2-U6gRNA5(BbsI)-PGKpuro2ABFP-WPRE 52 (Addgene #67974, kindly deposited by Dr. Kosuke Yusa) as described above. K562 cells were transduced with pHRSIN-pSFFV-ZIM3 KRAB -dCas9-pPGK-Hygromycin R and selected with hygromycin. Cells were then transduced with sgRNA expression constructs and selected with puromycin. Successful depletion was verified by RT-qPCR and/or immunoblot.
+
+## Co-immunoprecipitation
+
+Cells were washed once in PBS and lysed in cell lysis buffer (0.1% IGEPAL, 10 mM HEPES, 1.5 mM MgCl2, 10 mM KCl plus an EDTAfree protease inhibitor cocktail tablet (Roche)) for 10 min on ice. Nuclear pellets were isolated by centrifugation at 800 x g for 5 minutes at 4 /C14 C and resuspended in nuclear lysis buffer (1% IGEPAL plus 1:200 Benzonase in TBS). Following removal of insoluble nuclear material by centrifugation (10,000 x g for 10 minutes at 4 /C14 C), nuclear lysates were pre-cleared with protein A magnetic beads (ThermoFisher Scientific, #88846) for 1 h at 4 /C14 C. Immunoprecipitation was performed by incubating the pre-cleared nuclear lysates with 1 m g of antibody and protein A magnetic beads for a minimum of 2 h at 4 /C14 C. Co-immunoprecipitates were washed in lysis buffer thrice and eluted by heating at 70 /C14 C for 10 min in Laemmli buffer (Bio-Rad, #1610747).
+
+## Mass spectrometry analysis
+
+MPP8andPeriphilin co-immunoprecipitations were performed as described above, using /C24 10 8 wild-type HeLa cells. Polyclonal MPP8 and Periphilin knockout populations 3 served as negative controls. Samples were resolved approximately 1 cm into a pre-cast 4-12% Bis-Tris polyacrylamide gel (ThermoFisher Scientific, #NP0321BOX). The lanes were excised, cut in four equal chunks and the proteins reduced,alkylated,anddigestedin-gel.TheresultingtrypticpeptideswereanalyzedbyLC-MS/MSusinganLTQOrbitrapXLcoupledto a Waters nanoACQUITY. The nanoACQUITY was operated with solvent A (0.1% formic acid) and solvent B (MeCN, 0.1% formic acid). Peptides were eluted at a flow rate of 250 nl/min using a gradient rising from 8 to 25% solvent B by 27 min then to 40% solvent B by 35 min. MS spectra were acquired in the Orbitrap at 60,000 fwhm resolution with MS/MS spectra acquired in the ion trap. MS/MS spectra were generated by CID fragmentation at 35% NCE in a top6 fashion with fragmented peaks excluded for 45 seconds. Data wasprocessedinMaxQuant2.4.13.0 54 with carbamidomethylation (C) as a fixed modification and oxidation (M) and acetylation (protein N terminus) as variable modifications. Data was searched against a UniProt human database with LFQ and iBAQ enabled.
+
+## Immunoblotting
+
+Cells were washed once in PBS and lysed in whole cell lysis buffer (1% SDS plus 1:200 Benzonase in TBS) for 20 minutes at room temperature. Lysates were then heated to 70 /C14 Cin Laemmli buffer for 10 min and separated by SDS-PAGE. Proteins were transferred onto PVDF membranes (Merck, #IPFL00010) using a Trans-Blot SD Semi-Dry Transfer Cell (Bio-Rad). Membranes were blocked in 5%milkin PBS + 0.2% Tween-20 and probed overnight with the indicated antibodies at 4 /C14 C. Following a minimum of three washes in PBS+0.2%Tween-20,membranes were incubated with HRP-conjugated secondary antibodies for 40 minutes at room temperature and washed a further three times with PBS + 0.2% Tween-20. Reactive bands were visualized using Pierce ECL Plus Western Blotting Substrate, or SuperSignal West Pico or Dura Chemiluminescent Substrates (ThermoFisher Scientific).
+
+## CUT&amp;RUN
+
+CUT&amp;RUN was performed in 5x10 5 K562 cells using the CUTANA CUT&amp;RUN kit (EpiCypher, #14-1048) following the manufacturer's instructions. Targets were enriched using 0.05 m g of primary antibody (see key resources table). Multiplexed sequencing libraries were prepared using the NEBNext Ultra II DNA Library Prep Kit for Illumina (NEB, #E7645), and 61 bp paired-end reads generated on an Illumina NovaSeq 6000 instrument.
+
+## RT-qPCR
+
+Total RNA was extracted using the RNeasy kit (Qiagen, #74106) and genomic DNA was removed through on-column DNaseI (Qiagen, #79256) digestion. RNA was converted to cDNA using the LunaScript RT SuperMix (NEB, M3010) and qPCR was performed on a StepOne Real-Time PCR System (ThermoFisher Scientific) using the Luna Universal qPCR Master Mix (NEB, #M3003). Each step was performed as recommended by the manufacturer's protocols. Primer sequences are listed in Table S6.
+
+## RNA-seq
+
+Total RNA was extracted using the RNeasy kit (Qiagen, #74106) and genomic DNA was removed through on-column DNaseI (Qiagen, #79256) digestion. Ribosomal RNA was depleted using the NEBNext rRNA Depletion Kit v2 (NEB, #E7405). Multiplexed sequencing libraries were prepared using the NEBNext Ultra II Directional RNA Library Prep Kit for Illumina (NEB, #E7760), and 61 bp paired-end reads were generated on an Illumina NovaSeq 6000 instrument.
+
+## Flow cytometry
+
+K562 cells were washed once in PBS and incubated with the relevant antibodies (diluted 1:100 in PBS) for 15 min at 4 /C14 C. Following an additional PBS wash, cells were analyzed on a CytoFLEX S instrument (Beckman Coulter) and the resulting data analyzed using FlowJo (BD).
+
+## AlphaFold structural prediction
+
+The ColabFold 60 interface was used to perform AlphaFold 2,20 predictions of TASOR and TASOR2 domains, as well as AlphaFoldMultimer 21 modelling of interactions between HUSH and HUSH subunits. Predicted structures were visualized in UCSF ChimeraX. 61
+
+## QUANTIFICATION AND STATISTICAL ANALYSIS
+
+## Mass spectrometry
+
+Hits were filtered based on the presence of at least two unique peptides in wild-type cells. Hits were then ranked based on label-free quantification (LFQ) intensity in wild-type cells normalized to knockout controls.
+
+## CUT&amp;RUN
+
+Reads were aligned to the human genome (hg38) using Bowtie 2. 63 Peak calling was performed using the implementation of the MACS peak caller in SeqMonk (windows size = 300 bp; P &lt; 0.00001). High-confidence TASOR2 peaks were defined as those with a log2(peak score) &gt; 6. HOMER 23 was used to annotate peaks ( annotatePeaks.pl ) and analyze enriched motifs ( findMotifsGenome.pl ). For visualization, RPKM-normalized bigwig files were generated using deepTools 55 bamCoverage . Heatmaps were created using deepTools ( computeMatrix , plotHeatmap and plotProfile ). Genome browser screenshots were generated using IGV. 56 Gene ontology enrichment analysis was performed using g:Profiler. 57
+
+## ChIP-seq
+
+MPP8, TASOR, and H3K9me3 ChIP-seq data generated by the Wysocka laboratory were downloaded from GEO (GSE95374) and aligned as described. 11 TASOR and MPP8 peaks were called against the signal in their respective knockout cell lines using the MACS2 callpeak function (broad peak-calling, P &lt; 0.001, fold-enrichment over knockout &gt; 2). High-confidence HUSH peaks were defined by intersecting TASOR and MPP8 peaks using bedtools. 59 The following ENCODE 26 ChIP-seq datasets in K562 cells were used in this study: IRF2 (ENCFF102RGH), IRF1 (ENCFF684EGG), IRF9 (ENCFF345UOO), H3K4me3 (ENCFF660WUG), H3K9ac (ENCFF239EBH), and H3K27ac (ENCFF465GBD). Data was visualized using deepTools and IGV as described above.
+
+## RNA-seq
+
+Illumina adaptor sequences were removed with Cutadapt, 62 and the trimmed reads were aligned to the human genome (GRCh38) using Bowtie. 2,63 Uniquely mapped reads with a MAPQ score &gt; 20 were imported into SeqMonk and further analyzed using the RNA-seq quantitation pipeline followed by DESeq2 64 analysis. Enrichment analyses of GO terms and gene functions were performed using g:Profiler 57 and DAVID 58 respectively. Sashimi plots were generated in IGV. 56
+```
+**[END OF ARTICLE]**
+
+You are a scientific data curator responsible for summarizing experimental designs from research articles. Your task is to identify the 'Control Condition' and the 'Extra Perturbed Condition' from a given paper.
+
+### Instructions:
+1.  **Control Condition:** Identify the baseline state or reference group used for comparison. This is typically the "normal" or unmanipulated sample, such as a wild-type (WT) organism/cell line, a vehicle-treated group (e.g., DMSO), or a mock-transfected group.
+2.  **Extra Perturbed Condition:** Identify the primary experimental variable or intervention being tested against the control. This is the main change introduced to test the paper's hypothesis, such as a gene knockout (KO) or knockdown (KD), a drug treatment, or the overexpression of a protein.
+3.  Focus on the central experiment that defines the paper's main conclusion. If the paper describes multiple experiments, extract the conditions from the one that is most central to the overall story (often a key 'omics' experiment like RNA-seq or a primary functional assay).
+4.  **Be Concise:** Keep your descriptions brief and to the point, mirroring the style of the following examples.
+
+### Few-shot Examples:
+| Publication tittle | Experiment type | Control condition | Extra perturbed condition |
+| :--- | :--- | :--- | :--- |
+| The transcription factor SP1 orchestrates metabolic reprogramming in response to glucose starvation | RNA-seq | HepG2 | SP1 KO |
+| A novel long non-coding RNA, NEBULA, regulates neuronal differentiation in the developing cortex | RNA-seq | Mouse primary cortical neurons | NEBULA KD |
+| Cross-talk between the Hippo and Wnt pathways is mediated by the kinases LATS1 and LATS2 | RNA-seq | MCF-7 | LATS1 KD, LATS2 KD |
+| Epigenetic silencing by PRC2 is essential for maintaining pluripotency in human embryonic stem cells | RNA-seq | H9 hESCs | EZH2-/- |
+| A screen identifies SMARCA4 as a key regulator of the T-cell immune checkpoint response | RNA-seq | Jurkat T cells | SMARCA4 OE |
+| Metformin treatment reverses age-associated transcriptional changes in the liver | RNA-seq | C57BL/6 liver (24 months) | treated with metformin |
+| The RNA helicase DDX3 promotes translation of oncogenic transcripts in glioblastoma | RNA-seq | U-87 MG | DDX3 KO, DDX3 over-expressing |
+| A comprehensive map of alternative splicing events during zebrafish embryogenesis | RNA-seq | Zebrafish embryo (24 hpf) | None |
+| Phase separation of FUS protein drives aberrant stress granule formation in motor neurons | RNA-seq | iPSC-derived motor neurons | FUS P525L mutant |
+| The DNA damage response kinase ATM regulates alternative polyadenylation to control mRNA stability | RNA-seq | U2OS | treated with doxorubicin, ATM inhibitor |
+
+### Your Task:
+Analyze the provided article and extract the required information based on the instructions and examples above. Provide your answer in the following format:
+`| Publication tittle | Experiment type | Control condition | Extra perturbed condition |`

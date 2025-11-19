@@ -1,0 +1,407 @@
+**[START OF ARTICLE]**
+```
+## A ligation-independent sequencing method reveals tRNA-derived RNAs with blocked 3 0 termini
+
+## Authors
+
+## Correspondence
+
+## In brief
+
+Scacchetti et al. develop a ligationindependent cloning method (LIDAR) to sequence RNAs irrespective of their size or 3 0 modifications. LIDAR reveals a class of long 3 0 tRNA-derived fragments, present in cultured cells, tissues, and sperm and characterized by internal chemical modifications and blocked 3 0 ends.
+
+## Highlights
+
+## A ligation-independent sequencing method reveals tRNA-derived RNAs with blocked 3 0 termini
+
+Alessandro Scacchetti, 1 Emily J. Shields, 1,2 Natalie A. Trigg, 3,4 Grace S. Lee, 3 Jeremy E. Wilusz, 5 Colin C. Conine, 3,4 and Roberto Bonasio 1,6, *
+
+## SUMMARY
+
+Despite the numerous sequencing methods available, the diversity in RNA size and chemical modification makes it difficult to capture all RNAs in a cell. We developed a method that combines quasi-random priming with template switching to construct sequencing libraries from RNA molecules of any length and with any type of 3 0 modifications, allowing for the sequencing of virtually all RNA species. Our ligation-independent detection of all types of RNA (LIDAR) is a simple, effective tool to identify and quantify all classes of coding and non-coding RNAs. With LIDAR, we comprehensively characterized the transcriptomes of mouse embryonic stem cells, neural progenitor cells, mouse tissues, and sperm. LIDAR detected a much larger variety of tRNA-derived RNAs (tDRs) compared with traditional ligation-dependent sequencing methods and uncovered tDRs with blocked 3 0 ends that had previously escaped detection. Therefore, LIDAR can capture all RNAs in a sample and uncover RNA species with potential regulatory functions.
+
+## INTRODUCTION
+
+Prokaryotic and eukaryotic cells synthesize a vast range of RNA classes that greatly vary in size and function. A criterion for RNA classification is their coding capacity, which distinguishes protein-coding RNAs (messenger RNAs [mRNAs]) from non-coding RNAs (ncRNAs). The latter can be subdivided into structural ncRNAs, such as ribosomal RNAs (rRNAs) and transfer RNAs (tRNAs); small nuclear (snRNAs) and nucleolar (snoRNAs) RNAs that participate in splicing and rRNA biogenesis; and regulatory ncRNAs such as PIWI-interacting RNAs (piRNAs), microRNAs(miRNAs), and long ncRNAs (lncRNAs). 1-3 Most regulatory ncRNAs are shorter than 50 nt and are often referred to as ''small RNAs.'' 4 Regulatory ncRNAs larger than 500 nt are referred to as lncRNAs. 5
+
+Next-generation sequencing of RNA (RNA-seq) is a powerful approach to detect and quantify RNAs at the transcriptomewide level. Library construction techniques can be broadly classified in three categories: mRNA-seq, Smart-seq, and small RNA-seq. In mRNA-seq, polyadenylated (poly(A)+) mRNAs are purified, fragmented, converted to cDNA via random-primed reverse transcription (RT), and ligated to adapters for amplifica-
+
+tion and sequencing. 6 These protocols have been standardized for relatively abundant (&gt;100 ng) starting material and have been expanded to non-poly(A) transcripts, by removing rRNAs and skipping the oligo(dT) purification. 7,8 Smart-seq is based on template switching and generates high-complexity libraries from limiting amounts of mRNA, including from single cells. 9-13 Neither mRNA-seq nor Smart-seq captures small RNAs, which are typically sequenced by direct ligation of adapters to the 5 0 and 3 0 termini, followed by cDNA synthesis via RT. 14,15 While this methodology has been successful, it only clones RNAs with defined chemical structures at their termini, because adapter ligation requires a phosphate in 5 0 (5 0 P) and a hydroxyl group in 3 0 (3 0 OH). Some ncRNAs, however, carry chemical modifications at their termini, 16,17 hampering standard ligation-based methods. Various strategies have been implemented to overcome this limitation, 18-30 but they require prior knowledge on the chemical termini to be ''repaired.'' Thus, an unbiased, ligation-independent method for small RNAs, ideally one that also captures longer RNAs, remains a critical need.
+
+Here, we describe a method to achieve ligation-independent detection of all types of RNA (LIDAR), regardless of size or chemical structure of their 5 0 and 3 0 termini. We combined a custom
+
+template-switching oligo with unique molecular identifiers (UMIs) and quasi-random hexamer priming to minimize the formation of adapter dimers. This allowed us to skip size selections, maximizing recovery of small and long RNAs. Because LIDAR is ligation-independent, it captures RNA with modifications at their 3 0 ends, while retaining sensitivity for low RNA input; therefore, it can be used as an efficient ''all-in-one'' method to measure all types of RNAs simultaneously. LIDAR captured RNAs from mouse embryonic stem cells (ESCs), tissues, and sperm that are notoriously difficult to clone-including full-length tRNAs and derived fragments-and importantly, it revealed the presence of 3 0 -blocked tRNA-derived RNAs (tDRs) that had previously escaped detection by sequencing.
+
+## DESIGN
+
+WedevelopedLIDARwiththegoalofextendingtheligation-independent nature of Smart-seq toward more RNA classes while retaining its high sensitivity in low-input conditions. 12 All versions of Smart-seq, including Smart-seq3, 9 rely on template switching to introduce sequences for library amplification at the 5 0 , bypassing the need to ligate adapters. However, conventional Smart-seq was developed for mRNA and requires a 3 0 poly(A). Smart-seq has been modified to target poly(A) /C0 RNAs, but it still requires either in vitro polyadenylation, 21 which needs a 3 0 OH, or random hexamerpriming followed by size selection to remove adapter dimers, which compromise the detection of small RNAs. 31
+
+We introduced four modifications to the Smart-seq3 protocol to clone all types of RNA, regardless of size or 3 0 modifications (Figure 1A). First, we primed the RT with a quasi-random hexamer, devoid of cytosine at the 3 0 (5 0 -NNNNND-3 0 ; D = A, T, or G). This reduces annealing to the 3 0 -rGrGrG of the template-switch oligo (TSO), minimizing adapter dimers (Figures 1B, S1A, and S1B). 32,33 Second, we designed a TSO with a sparse UMI structure, 5 0 -NNcgNNagNN-3 0 , instead of the 5 0 -NNNNNNNN-3 0 used in Smart-seq. 9 This TSO further reduces the formation of adapter dimers, favoring the generation of libraries with inserts (Figures 1B and S1B). Third, we omitted the TSO from the first reaction, promoting RT primer annealing to the RNA and reverse transcriptase binding. 34 The RT reaction was started at 25 /C14 Cfor 10 min (Figure 1A, step I) and the temperature was raised to 42 /C14 Cbefore adding the TSO (Figure 1A, step II). Fourth, we omitted tagmentation and size selection after preamplification (Figure 1A, step III), proceeding directly to the final PCR (Figure 1A, step IV). These modifications to Smart-seq3 allowed us to capture RNA of all sizes, including small RNAs.
+
+## RESULTS
+
+## LIDAR captures small RNAs
+
+Although random hexamer priming is extensively utilized for cDNA synthesis, 7 it has not been employed to clone small RNAs, likely due to difficulties in separating libraries with small inserts from empty adapter dimers. In fact, the commercial SMARTer total RNA-seq kit, which combines random hexamer priming with template switching in a similar way as the modified Smart-seq3 protocol we tested (Figure 1B), requires size selection to remove adapter dimers.
+
+LIDAR was designed to suppress adapter dimers without size selection, allowing us to clone small RNAs. We tested LIDAR on 20- and 50-nt RNA oligos ending with 8 random nucleotides. We obtained products of the correct size from as little as 0.6 ng input RNA, indicating good sensitivity (Figures 1C and S1C). The sequence coverage of both 20-nt (Figure 1D) and 50-nt (Figure S1D) RNAs was nearly complete, with 90% of the length covered in &gt;70% of the reads, indicating that our modified RT-based sequencing could capture small RNAs. In fact, even a ligation-based approach (New England Biolabs [NEB] kit; henceforth referred to as ''ligation'') did not result in 100% coverage at the 3 0 (Figures 1D and S1D), likely due to incomplete synthesis or partial degradation of the RNA oligonucleotides.
+
+LIDAR showed no sequence preference in the captured RNAs (Figure S1E, top), similar to the ligation-based protocol (Figure S1E, bottom), despite earlier reports of ligation biases especially at the 3 0 of the RNA insert. 35 LIDAR captured 20- and 50-nt oligos equally well, whereas the ligation-dependent method preferentially recovered the smaller RNA, consistent with the fact that this protocol was optimized for sequencing small RNAs (Figure 1E).
+
+Next, we tested LIDAR on total RNA from mouse ESCs. We successfully constructed libraries from as little as 1 ng total cellular RNA (Figure S1F), although with increasing contamination of adapter dimers (Figure S1G). TSO strand invasion events were limited (Figure S1H), occurring at a frequency comparable to FLASH-seq, a modification of Smart-seq developed to reduce these products. 10 LIDAR libraries contained a substantial number of small inserts (&lt;100 bp), albeit fewer than in ligation libraries (Figure S1I). Conversely, libraries constructed with the commercial SMARTer total RNA-seq kit contained almost no insert &lt;100 nt (Figure S1I).
+
+Because LIDAR was designed to capture all RNAs, we expected a large proportion of reads to map to abundant structural RNAs, such as rRNA. In fact, 64% of LIDAR reads mapped to rRNA, three times more than with the traditional ligation protocol (Figure S2A) but similar to ligation-based techniques aimed at capturing larger sets of RNAs, such as PANDORA-seq. 28 Among ncRNAs, LIDAR recovered several short RNA biotypes, such as snoRNA, snRNAs, and tRNAs, while the ligation protocol prevalently captured snoRNAs. SMARTer libraries, on the other hand, contained mostly pseudogenes and scRNAs (Figure 1F). LIDAR also retrieved mature miRNAs (Figure 1G), and despite their small size (20-24 nt), their entire length was often covered (Figures 1G and 1H). Capture of miRNAs by LIDAR was less efficient than with ligation-based methods optimized for small RNAs, especially for low-abundance species (Figure S2B). However, we could improve sensitivity for small RNAs by size selecting the input (Figures S2C and S2D) and depleting rRNAs before library construction (Figures S2A and S2E).
+
+Overall, we show that LIDAR is a versatile, ligation-independent method that allows for sequencing of RNAs of any size and biotype from small input amounts in less than 4 hours.
+
+## Simultaneous detection of differentially expressed protein-coding and small RNAs
+
+To capture RNA of all sizes, including small RNAs, we omitted the tagmentation step of Smart-seq3, to avoid the generation
+
+of unclonable and unmappable fragments. Nonetheless, the quasi -random hexamers should prime RT from internal sites within longer transcripts, and therefore RNAs of all sizes should be detectable in LIDAR libraries. After excluding those mapping to rRNA, a large proportion of the remaining reads originated from mRNAs, which were virtually undetected by the ligationbased method (Figure S2F). Consistent with this, LIDAR libraries contained inserts from a larger range of original transcript size
+
+(Figure S2G), suggesting that this extensive coverage would allow for the detection of differentially expressed transcripts of various biotypes.
+
+We differentiated ESCs into neural progenitor cells (NPCs)-a process accompanied by substantial changes in gene expression 36,37 (Figure 2A). Using conventional mRNA-seq, we detected 8,955 genes differentially expressed (adjusted p &lt; 0.05) between NPCs and ESCs (Figure 2B, left). These included downregulated pluripotency genes ( Sox2 , Nanog , Pou5f1 ) and upregulated NPC markers ( Nestin , Ncam1 , Neurog1 ). LIDAR libraries revealed a comparable number of differentially expressed mRNAs ( n = 6,713; adjusted p &lt; 0.05) (Figure 2B, right), including the same pluripotency and NPC markers. Comparison of transcript quantification by mRNA-seq or LIDAR showed very similar expression patterns (Figure 2C), a high degree of overlap (Figure 2D), and good correlation between fold changes (Figure 2E). LIDAR detected fewer miRNAs (Figure S2H) than ligation-based sequencing, but they were quantified accurately (Figures 2F-2H). LIDAR and ligation-based measurements of snoRNAs were also correlated (Figures S2I and S2J), whereas most differentiation-induced
+
+changes in snRNAs were only identified by LIDAR (Figures S2K and S2L).
+
+These results highlight the effectiveness of LIDAR in analyzing gene expression changes simultaneously in distinct RNA populations, which are typically measured with separate library construction protocols. Nonetheless, for deep analyses exclusively of the coding transcriptome or miRNAs, dedicated methods remain preferable.
+
+## LIDAR reveals long 3 0 tDRs in ESCs
+
+tDRs, 38 also known as tRNA-derived small RNAs (tsRNAs), are small ncRNAs with a growing list of functions in the regulation of translation, 39 transposons, 40 and transgenerational epigenetics. 41,42 tDRs are classified according to their size and position within the tRNA sequence (Figure 3A). 43,44 5 0 tDRs start at the 5 0 of the mature tRNA and end near the D-loop (5 0 -tRF), or at the anticodon loop (5 0 tRNA halves or 5 0 -tiRNAs). 3 0 tDRs end at the non-templated 3 0 -terminal CCA sequence and start at the T-loop (3 0 -tRF) or at the AC-loop (3 0 tRNA halves or 3 0 -tiRNAs). tDRs that do not include either 5 0 or 3 0 termini are classified as internal tRFs (i-tRF).
+
+Ligation-based libraries are biased toward the detection of 5 0 -tRFs and 5 0 tRNA halves, and they do not capture efficiently 3 0 tRFs and 3 0 tRNA halves, despite the fact that these can be
+
+detected in northern blots. 27,45 We speculated that chemical modifications at the 3 0 end interfere with ligation and wondered whether LIDAR would capture these ''unclonable'' tDRs. We sequenced size-selected RNAs &lt; 200 nt and detected a far greater proportion of reads mapping to 3 0 tDRs, compared with ligation-dependent libraries, which showed a bias for 5 0 fragments (Figure 3B), as previously reported. 27 The size distribution for reads mapping to the 5 0 of tRNAs was similar in both methods (Figure 3C, left), suggesting that LIDAR reads assigned to this class originated from actual 5 0 tDRs. On the other hand, the size of 3 0 tDRs cloned by LIDAR was markedly different, compared with ligation-based libraries (Figures 3C and 3D). In LIDAR, the majority of reads mapping to the 3 0 of tRNA genes were 30-40 nt, some of them compatible with the size of 3 0 tRNA halves, whereas 3 0 tDRs captured by ligation were 17-22 nt, corresponding to cleavage events within the T-loop (Figures 3C, right and S3A) that generate 3 0 -tRFs. We call the 30- to 40-nt tDRs identified by LIDAR as ''long'' to differentiate them from the shorter 3 0 -tRFs.
+
+LIDAR libraries from size-selected, &lt;50-nt RNA inputs contained tDRs with size distribution similar to those observed in the &lt;200-nt fraction (Figures 3B, 3C, and S3B), suggesting that the long 3 0 tDRs are unlikely to originate from abortive cDNA synthesis from full-length tRNAs. Furthermore, the presence of multiple long 3 0 tDRs identified by LIDAR was confirmed by northern blots (Figures 3D and S3C), although in one case (Ile-TAT-2-1; Figure S3C) the size appeared smaller than expected. As ligation-based sequencing did not detect fragments derived from this tRNA, we surmise that the 3 0 tDRs detected by northern blot corresponds to the long 3 0 tDRs identified by LIDAR and that it may carry chemical modifications affecting its migration, such as 2 0 ,3 0 cyclic phosphate (2 0 ,3 0 -cP). 46,47 3 0 tDRs of 30-40 nt have been observed by northern blots across different human tissues and cell lines, 48 including a 3 0 fragment from Arg-TCG-11, 49 which we also detected in ESCs (Figure 3D). This suggests that LIDAR can identify tDRs that escape detection by standard ligation-based methods.
+
+In many cases, LIDAR reads mapping to the 3 0 of tRNAs contained the non-templated CCA (Figure 3D), indicating that they originated from mature tRNAs. 50 However, in some cases the terminal CCA was incomplete (Figure 3D), likely due to internal priming. This prompted us to develop a modified LIDAR protocol to increase 3 0 end coverage. We designed a random hexamer that protrudes as a 3 0 overhang of a double-stranded DNA molecule (Figure S3D). The double-stranded stretch should decrease internal priming, favoring the initiation of RT at the 3 0 end of the RNA. Libraries constructed with this modified protocol (3 0 -LIDAR) on 20- and 50-nt synthetic RNAs, yielded an increased number of reads covering the full sequence, corresponding to increased priming at the 3 0 (Figure S3E). Consistent with this, the size distribution of miRNAs reads in 3 0 -LIDAR on total ESC RNA more closely resembled the end-to-end coverage observed in ligation libraries (Figure S3F). 3 0 -LIDAR also improved the coverage of the 3 0 -terminal non-templated CCA ends of tRNAs (Figures S3G and S3H), although at the expense of increased numbers of adapter dimers (Figure S3I). Size distribution and representation of 3 0 tDRs were similar in LIDAR and 3 0 -LIDAR (Figures S3J-S3L), further suggesting that the long,
+
+30- to 40-nt 3 0 tDRs identified in LIDAR are produced inside the cell by cleavage of mature, CCA-containing tRNAs.
+
+## Long 3 0 tDRs are differentially expressed in mouse tissues
+
+Wewonderedwhether3 0 long tDRs could also be detected in vivo and whether their expression is regulated across tissues, as observed for other types of tDRs. 49 We constructed LIDAR and ligation-based libraries on RNA from mouse brain and testis. The biotype distributions appeared markedly different, with LIDAR recovering a broader spectrum of ncRNA types in both brain and testis (Figure S4A). LIDAR reported differences in miRNAs that were in good agreement with those detected by ligation-based sequencing (Figures 4A, 4B, and S4B). In testis, both methods detected PIWI-associated RNAs 51,52 (Figures 4C and S4A), confirming the ability of LIDAR to clone and measure different classes of small RNAs. A higher fraction of reads mapped to 3 0 tDRs in LIDAR, compared with the ligation-based libraries (Figure 4D). Several 30- to 40-nt 3 0 tDRs identified only by LIDAR showed differential expression between brain and testis (Figures 4E and 4F), which was confirmed by northern blots (Figures 4G, 4H, and S4C-S4F), suggesting tissue-specific regulation of long 3 0 tDRs that can be quantified by LIDAR.
+
+## LIDAR detects RNA modifications on 3 0 tDRs
+
+It is generally believed that most tDRs derive from enzymatic cleavage of mature tRNAs. 43 Proper tRNAs biogenesis requires extensive chemical modification at stereotypical nucleotide positions. 53 tRNA modifications often constitute obstacles for reverse transcriptases, resulting in errors during cDNA synthesis that can be utilized to infer the position of modified residues. 51 Both long 3 0 tDRs and shorter 3 0 -tRFs showed a high frequency of mismatches at position 58 in LIDAR (Figures 5A and 5B), consistent with the presence of m1A, 25,52,53 which is typically found on mature tRNAs. 54 Thus, the 3 0 tDRs detected by LIDAR may derive from mature, modified tRNAs. Alternatively, the 3 0 tDRs could be directly targeted by the RNA modification machinery. In ligation-based libraries, fewer 3 0 tDRs contained mismatches at position 58 (Figures 5A and 5B). Since the reverse transcriptases used in the ligation protocol and LIDAR are from the same family (M-MuLV), it is unlikely that the m1A only affects LIDAR, suggesting that another determinant is responsible for the difference in mismatch frequency at this position.
+
+Shi et al. recently described PANDORA-seq, a ligation-based RNA-seq approach that utilizes T4 polynucleotide kinase (PNK) to generate 5 0 P and 3 0 OH ends, combined with AlkB to remove methyl groups and facilitate RT. 28 We compared PANDORAseq data with LIDAR on comparable input material (size-selected RNAfromserum-free ESCs) and utilized the same computational strategy to analyze data from both methods. The published PANDORA-seq and our LIDAR reads mapped to a similar but not identical distribution of RNA classes (Figure S5A). As expected for a ligation-based approach, PANDORA-seq recovered full-length miRNAs at a higher frequency than LIDAR (Figure S5B). However, although PANDORA-seq detected more 3 0 tDRs than conventional ligation, including some long 3 0 tDRs, LIDAR was superior in its ability to capture a larger number of both 5 0 and 3 0 tDRs (Figures 5C, 5D, and S5C). Furthermore,
+
+LIDAR detected 3 0 tDR modifications at position 58 (Figure 5E) that were missed by PANDORA-seq, likely because they were removed by AlkB. Finally, while some PANDORA-seq reads mapped to the same tRNAs that give rise to the long 3 0 tDRs identified by LIDAR, the fragment size according to PANDORA-seq was often smaller (Figures S5D and S5E), and many long 3 0 tDRs went undetected (Figure S5F).
+
+In conclusion, LIDAR revealed that the 30- to 40-nt 3 0 tDRs identified in ESCs are modified, possibly with m1A, at position 58 and are therefore likely cleavage products of mature tRNAs.
+
+## LIDAR clones 3 0 -blocked tRNAs and tDRs
+
+A motivation to develop LIDAR was to allow for sequencing of RNAswith3 0 endsblockedbymodifications that make them inac- cessibletoconventionalligation. RNAswiththesefeaturesinclude the U6 snRNA 55 andtRNAschargedwith amino acids (Figure 6A). Unlike other snRNAs, U6 is transcribed by RNA polymerase III (RNA Pol III), and its 3 0 terminus is processed to 2 0 ,3 0 -cP. 56 This 3 0 modification, unless resolved by T4 PNK, prevents the ligation of an adapter. 28 A similar impediment can arise from amino acids that, in a subset of tRNAs, are attached to the 3 0 OH group 50 and can only be removed by chemical deacylation or b -elimination. 57,58 Random hexamer priming should not be affected by the chemical status of the 3 0 of the RNA (Figure 6A), and indeed LIDAR cloned a synthetic 3 0 -blocked RNA that could not be incorporated in ligation-based libraries (Figures 6B and S6A).
+
+Based on these observations, we reasoned that one cause for RNAs being detected by LIDAR but not ligation may be a 3 0
+
+block. Accordingly, LIDAR captured the U6 snRNA, which was virtually absent from ligation-based libraries, likely because of its terminal 2 0 ,3 0 -cP (Figure S6B). tRNA reads from LIDAR, but not ligation-based cloning, peaked at /C24 70 nt-the size of mature tRNAs (Figure 6C). This difference was not due to a ligation bias toward smaller inserts, since the larger snoRNAs were efficiently captured by ligation (Figure S6C). LIDAR reads mapped to tRNAs with a broad range of anticodons, similar to techniques developed specifically to clone mature tRNAs 25 (Figure 6D, left). In contrast, ligation-dependent libraries were biased toward a subset of anticodons (Figure 6D, right), as reported. 27 Fulllength tRNA reads from LIDAR contained mismatches at sites where mature tRNAs are chemically modified, including position 9, 26, 32, 37, e2, and 58 (Figure S6D, left), similar to observations made with mim-tRNA-seq. 25 Some of these sites were also detected as mismatches in reads from ligation-based libraries but at a lower frequency (Figure S6D, right).
+
+Given that more than 80% of mature cytosolic tRNAs are charged, 57 we conclude that LIDAR captured those species much more efficiently than the ligation-based method, owing to its ability to bypass blocked 3 0 ends.
+
+To better profile molecules with inaccessible 3 0 , we treated ESC RNA with PNK to convert 3 0 P and 2 0 -3 0 cP to 3 0 OH, added a poly(A) tail, and then removed them with oligo-dT-conjugated beads (Figure 6E). The resulting supernatant (flow-through) should be enriched for ''blocked'' RNAs with a 3 0 other than -OH, -P, or 2 0 ,3 0 -cP. This RNA fraction was prevalently composed of full-length tRNAs, which appeared as a band of /C24 70 nt (Figure 6F). LIDAR reads from blocked RNA mapped to tRNA genes (Figure S6E) and were enriched for full-length inserts, compared with untreated RNA (Figures S6F and S6G), and to ligation libraries (Figure 6G). Other small RNA classes, except a subset of snoRNAs, were captured efficiently in LIDARlibraries from all (i.e., non-blocked) RNA and were also detected by ligation (Figure 6G). We found several 3 0 tDRs enriched in the blocked RNA population (Figures 6H and 6I). We speculate that some of these 3 0 tDRs may be aminoacylated, thus deriving from mature and charged tRNAs. A recent report provided the first evidence of aminoacylated 3 0 tDRs, 59 supporting the existence of a previously inaccessible class of 3 0 tDRs that can be detected with LIDAR.
+
+Thus, LIDAR clones RNAs with blocked 3 0 and can be used to analyze RNAs not detectable with ligation-based methods, including full-length aminoacylated tRNAs and their 3 0 fragments.
+
+## LIDAR captures transcript diversity in mouse sperm
+
+Ligation-based small RNA-seq studies reported that the RNA content of mouse sperm purified from the cauda (distal) region of the epididymis is dominated by smalland medium-size species (&lt;2 kb), in particular 5 0 tDRs. 41,42 However, analyses of sperm RNA by northern blot or the recently described OTTRseq 27 revealed the presence of 3 0 tDRs-and possibly also fulllength tRNAs-that were missed by conventional small RNA
+
+library preparation protocols. 45 We tested whether LIDAR could generate a more comprehensive catalog of RNAs in sperm.
+
+RNAs isolated from cauda sperm were small (Figure S7A), as previously reported. 27,28,45 We analyzed total sperm RNA with or without enriching for blocked transcripts (see Figure 6E) with LIDAR or ligation-based libraries as control. After excluding rRNAs, the majority of the RNA fragments cloned from cauda sperm by both LIDAR and ligation originated from tRNAs (Figure 7A), in line with previous studies. 41,42,45 The size distribution of cytosolic tRNA reads revealed that a large fraction originated from tDRs rather than full-length mature tRNAs, as previously reported 45 (Figure 7B). On the other hand, reads mapping to mitochondrial tRNAs peaked at /C24 70 nt in LIDAR libraries and increased after enrichment of blocked RNAs (Figures 7A and 7B). This indicates that the mitochondrial tRNAs in sperm are (1) less prone to fragmentation and (2) blocked at their 3 0 end. This demonstrates that cytosolic tRFs detected by LIDAR are bona fide RNA species, not artifacts.
+
+AsweobservedinESCs,5 0 and3 0 tDRsweredetectedatsimilar levels by LIDAR, whereas ligation favored 5 0 tDRs (Figure 7C). We extendedourcomparisonstothepublishedPANDORA-seqdataset on mouse sperm 28 andnoted a similar underrepresentation of 3 0 tDRs, compared with LIDAR (Figure S7B); in particular, PANDORA detected fewer long 3 0 tDRs (Figures S7C and S7D). The few 3 0 tDRs in traditional ligation-based libraries were mostly small (17-22 nt), although larger species were present (Figure S8A), whereas LIDAR captured mostly fragments 30-40 nt in size (Figure S8A). Importantly, LIDAR identified several 3 0 tDRs not detected or very underrepresented in ligation and PANDORA-seq libraries (Figures 7D and S7D), with a heavily modified base at position 58 (Figure S8B), and enriched in the blocked RNA population (Figures 7D, 7E, and S8C), suggesting that long 3 0 tDRs with blocked 3 0 ends are also present in sperm.
+
+Many LIDAR reads mapped to rRNA (71.3%) (Figure S8D), almost three times higher than in ligation libraries (28%), likely because rRNA fragments in sperm have 3 0 P or 2 0 3 0 cP ends that require enzymatic conversion before ligation, as shown by PANDORA-seq. 28 LIDAR libraries from blocked sperm RNA also contained a large proportion of rRNA reads (70.6%). While it is possible that our biochemical depletion was incomplete, we noticed an enrichment of blocked reads mapping to welldefined regions of 18S and 28S rRNAs (Figure S8E), suggesting the existence of small rRNA fragments chemically blocked at their 3 0 ends. As in the case of ESCs, LIDAR captured a higher amount of U6 (Figure S8F).
+
+In summary, LIDAR uncovered diversity in the sperm RNA payload, including full-length tRNAs and 3 0 tDRs that had previously escaped detection.
+
+## DISCUSSION
+
+Here, we presented LIDAR, an RNA-seq technique that utilizes a custom template-switch strategy combined with quasi -random
+
+hexamer priming to sequence all types of RNA, regardless of size or chemical modifications at 5 0 and 3 0 .
+
+## Technical advantages of LIDAR
+
+LIDAR enables quick and comprehensive coding and non-coding transcriptome analysis. The protocol (Figure 1A) can be completed in less than 4 h, faster than recent methods based on template switching, 10,13,21 and with minimal hands-on time. It does not require tagmentation and all molecules contain UMIs, mostly missing in existing small RNA cloning strategies, thus increasing quantification accuracy, especially from lowinput samples. A sparse UMI structure allows the sequencing
+
+of LIDAR libraries without causing low-complexity issues during cluster detection on Illumina sequencers. 60,61
+
+The input RNA for LIDAR does not require chemical or enzymatic pre-processing. This minimizes contaminations and sample loss due to RNA degradation, as observed for some enzymatic treatments. 16,19 While size selection of input RNAs by PAGE can mitigate the risk of the latter, 28 it might also lead to artificial tRNA fragmentation. 27 LIDAR bypasses the requirement of a priori knowledge of terminal RNA modifications, only some of which can be removed by established methods. 19,28,30
+
+The RNA biotype distribution in LIDAR libraries is markedly different from the one obtained by standard ligation. As no method is completely free from biases, it is possible that the two strategies overrepresent and underrepresent different RNA species. Comparison of LIDAR with PANDORA-seq showed a much more similar biotype distribution, at least for ncRNAs (Figure S5A), despite the many differences between the two protocols.
+
+Ligation-based sequencing strategies developed for small RNAs can be used to analyze long RNAs, such as mRNA, but require an enrichment step. 29 LIDAR can detect transcriptional changes of both long and small RNAs simultaneously from total RNA (Figures 2 and S2). LIDAR identified most of the differences in both protein-coding RNAs and small RNAs, detected independently by specialized protocols in ESCs vs. NPCs. Finally, LIDAR requires relatively low-input amounts (10-500 ng total RNA), making it amenable for comprehensive transcriptome analyses of biological sources where starting material is limited.
+
+## Ligation-independent small RNA-seq
+
+The ligation of sequencing adapters requires free 3 0 OH ends on the target RNAs or a means to generate them. For example, PANDORA-seq utilizes enzymatic treatments to generate RNA ends compatible with ligation and to remove internal RNA modification that could stall RT enzymes. 28 Artificial polyadenylation of small RNAs enables template switching protocols that include an oligo-dT priming step, 20,21 but only RNAs that contain a 3 0 OH can be artificially polyadenylated. TGIRT-seq 22,23 leverages a group II intron reverse transcriptase to synthesize full-length cDNAs, including from tRNAs, 24 without the need for 3 0 adapter ligation. TGIRT-seq captures small and long RNAs, but suffers from sequence bias, adapter dimers, and cDNA concatamers. 23 The mim-tRNA-seq protocol significantly improved TGIRTmediated cloning of tRNAs heavily modified internally and at the 3 0 , 53 but at the expense of chemical deacylation of 3 0 tRNA ends and gel-based size selection, 25 which could cause unwanted RNA fragmentation. 26 OTTR-seq 26 utilizes the ''template jumping'' activity of a truncated B. mori R2 reverse transcriptase to synthesize full-length cDNA with 3 0 and 5 0 adapter sequences. This improved the detection of several RNA classes, including tRNAs. 27 However, the terminal nucleotidyl transferase activity of the B. mori R2 reverse transcriptase toward the template RNA, necessary for primer duplex hybridization to at least some templates, 26 requires free (3 0 OH) ends. Finally, the B. mori R2 RT is not commercially available at the time of writing.
+
+RNA (Figure 6B). LIDAR libraries from total RNA contained inserts from a variety of small and long RNAs, including full-length tRNAs and tDRs that could not be ligated, likely due to the presence of an amino acid in 3 0 (see below). Thus, LIDAR is an effective, ligation-independent alternative to the methods cited above, with the added advantage of its simplicity and the commercial availability of all required reagents.
+
+## Revealing elusive 3 0 tDRs
+
+Several regulatory functions have been assigned to tDRs. 43 For example, 5 0 tRNA halves generated by angiogenin cleavage sustain cell proliferation in breast cancer cells. 62 In plants, 3 0 tDRs participate in retrotransposon silencing. 40 tDRs found in mouse sperm have been implicated in the epigenetic inheritance of metabolic disorders. 41,42 In these reports, ligation-based methods, similar to others commonly used to quantify tDRs, 63-66 showed a predominance of 5 0 tDRs in mature sperm and very few 3 0 tDRs. However, 3 0 tDRs in sperm were detected by northern blot, 45 OTTR-seq, 27 and now LIDAR (Figure 7). Attempts to recapitulate the epigenetic transmission of metabolic information, using synthetic 5 0 tDRs based on those detected in sperm by ligation-based sequencing, was unsuccessful, 42 indicating that our knowledge of functional RNAs in sperm may be far from complete.
+
+LIDAR detected blocked 3 0 tDRs that we speculate to be aminoacylated, although this has only been demonstrated in one example so far. 59 It is also possible that some of the 3 0 tDRs detected by LIDAR may be instead part of nicked mature tRNAs. 67,68 Finally, some of the long (30-40 nt) 3 0 tDRs preferentially detected by LIDAR may be 3 0 tRNA halves before or after resection or erosion of a few nucleotides at their 5 0 . Regardless of their origin, we believe that charged 3 0 tDRs may represent an overlooked class of RNAs with yet unknown regulatory functions, which LIDAR might help to investigate.
+
+Many reads in LIDAR libraries from various sources, including sperm, mapped to mitochondrial tRNAs (Figures 1F and 7A). Their persistence after enrichment for blocked RNA species (Figure 7B) suggests that they are charged with amino acids, explaining why ligation-based methods failed to capture them. Interestingly, some shorter reads suggestive of tDRs originating from mitochondrial tRNAs were also detected by LIDAR (Figure 7B). Non-canonical functions of mitochondrial tDRs have been proposed, 69,70 but their role is still unclear, especially in the context of sperm maturation and function, and in need of further investigation.
+
+## Conclusions and outlook
+
+LIDAR is a powerful, simple, and fast RNA-seq method that allows for comprehensive characterization of coding and noncoding transcriptomes from limiting amounts of material with commercially available reagents. LIDAR captured a large variety of RNAs in mouse ESCs, NPCs, brain, testis, and sperm, including full-length tRNAs and 3 0 tDRs with blocked 3 0 termini that previous methods failed to detect. While the functional implications of the presence of these 3 0 -blocked tDRs in tissues and sperm are currently unknown, we noticed that they are of the same size as the RNA population responsible for the epigenetic
+
+transmission of metabolic phenotypes through the mouse germ line. 41,42
+
+Full-length tRNAs and tDRs might not be the only RNAs with blocked 3 0 ends. Our data suggest that 3 0 -blocked small RNAs might also be formed from other classes of transcripts, such as snoRNAs and rRNAs (Figures 6G and S8E). Given that LIDARhasthepotential to capture RNAs with any type of 3 0 modifications, known or unknown, without the need to remove them, webelieve it will become a useful tool to investigate these yet unexplored RNAs.
+
+## LIMITATIONS OF THE STUDY
+
+As presented, LIDAR cannot be used on single cells owing to excessive adapter dimer contamination when starting from less than 10 ng RNA. Post-library depletion methods, such as DASH, 71,72 might be used to remove adapter dimers and potentially increase sensitivity to the point of allowing LIDAR from single cells. Along similar lines, rRNA depletion steps can be integrated into the LIDAR protocol, increasing sensitivity toward non-rRNA species (Figures S2A and S2E). However, care should be taken when performing rRNA depletion, as some methods can introduce biases and cause unwanted RNA fragmentation. 73 Thus, avoiding rRNA removal for LIDAR libraries will preserve the integrity of input RNA and provide a better representation of RNA species, such as 3 0 tDRs, present in vivo , at the cost of requiring deeper sequencing. Additionally, it will allow for the study of rRNA-derived fragments, which may have biological functions. 74
+
+Despite several optimization attempts, some expressed miRNAs could not be detected by LIDAR. One possibility is that the 5 0 Pand3 0 OHonmiRNAs 17 are ideal substrates for ligation, while template switching is more efficient on 5 0 -capped or 5 0 OH RNAs. 75 If detection of the full spectrum of 5 0 P RNAs were crucial, RNAs could be chemically capped 20 or dephosphorylated before LIDAR. Random hexamer priming in LIDAR causes sub-optimal coverage of 3 0 ends, which can be improved using 3 0 -LIDAR (Figures S3D-S3H). If full and sensitive coverage only of miRNAs is desired, then a ligation-based method will be more effective than LIDAR.
+
+The ncRNA biotype distribution of LIDAR libraries shows a small bias toward reads mapping to mitochondrial tRNAs, compared with cytosolic tRNAs. This might be due to the temperature used for RT (42 /C14 C, as in Smart-seq3 9 ), which may favor the lower GC content of mitochondrial tRNAs. 76 The reverse transcriptase used in LIDAR is compatible with temperatures up to 60 /C14 C; therefore, the RT conditions could be adjusted.
+
+One type of RNA that might be missed by LIDAR is circular RNAs, 77 since the lack of a linear 5 0 end favors rolling-circle cDNA synthesis over template switching. 78 To enhance circular RNA detection with LIDAR, it may be possible to enrich circular RNAs and perform gentle hydrolysis. 79,80
+
+In addition to 3 0 tDRs, LIDAR also revealed the presence of blocked 5 0 tDRs (Figures 7C and S8A). Because internal priming events on full-length tRNAs generating 5 0 -tDRs-like reads cannot be formally excluded, although unlikely, we focused our analyses on 3 0 tDRs. If a precise and sensitive cloning protocol for 5 0 tDRs is desired, a combination of TGIRT-mediated 3 0 23 and Smart-mediated 5 0 9 template switches may be the so-
+
+lution. Adding a tagmentation step may also increase coverage of longer RNAs.
+
+## STAR + METHODS
+
+Detailed methods are provided in the online version of this paper and include the following:
+
+## SUPPLEMENTAL INFORMATION
+
+Supplemental information can be found online at https://doi.org/10.1016/j. molcel.2024.07.008.
+
+## ACKNOWLEDGMENTS
+
+The authors thank Robert Warneford-Thomson for technical help and the Bonasio lab for feedback on the experiments and manuscript. R.B. acknowledges support from the NIH (R01GM127408, R01GM138788, and R35GM153281) and the Max Planck-von Humboldt Research Award 2020. N.A.T. is supported by the Lalor Foundation Postdoctoral Fellowship. J.E.W. is supported by National Institutes of Health grant R35-GM119735 and Cancer Prevention &amp; Research Institute of Texas grant RR210031. J.E.W. is a CPRIT Scholar in Cancer Research. C.C.C. is supported by the Pew Biomedical Scholars Award and the NIH (R35GM151087).
+
+## AUTHOR CONTRIBUTIONS
+
+Conceptualization, A.S. and R.B.; methodology, A.S., E.J.S., and R.B.; formal analyses, E.J.S; investigation, A.S., N.A.T., G.S.L., and J.E.W.; data curation, E.J.S.; writing - original draft, A.S. and R.B.; writing - review &amp; editing, A.S., E.J.S., N.A.T., C.C.C., J.E.W., and R.B.; visualization, A.S., E.J.S., and R.B.; supervision, R.B. and C.C.C.; project administration, R.B.; funding acquisition, R.B., J.E.W., and C.C.C.
+
+## DECLARATION OF INTERESTS
+
+## REFERENCES
+
+## STAR + METHODS
+
+## RESOURCE AVAILABILITY
+
+## Lead contact
+
+Further information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, Roberto Bonasio (roberto@bonasiolab.org).
+
+## Materials availability
+
+This study did not generate new unique reagents.
+
+## Data and code availability
+
+## EXPERIMENTAL MODEL AND STUDY PARTICIPANT DETAILS
+
+## Cell lines and strains
+
+C57BL/6 mouse ESC were purchased from ATCC (SCRC-1002) and maintained onto 1% gelatin-coated (Sigma-Aldrich, Cat. No G1393) dishes in DMEM knockout medium (Life Technologies, Cat. No 10829-018) supplemented with 15% ES-grade fetal bovine serum (Gibco, Cat. No 16141079), 1% GlutaMAX (Thermo Scientific, Cat. No 35050061), 1% non-essential amino acids (SigmaAldrich, Cat. No M7145), 0.5% penicillin/streptomycin solution (Sigma-Aldrich, Cat. No P0781), 110 m M b -mercaptoethanol (Gibco, Cat. No 21985023), 100 units/mL leukemia inhibitory factor (LIF) (Millipore Sigma, Cat. No ESG1107), and 2i [3 m MGSK-3inhibitor XVI (Cat. No 361559), 1 m MMEK1/2 Inhibitor III (Cat. No 444966)].
+
+## Mice
+
+Male 8-to-12-week-old FVB/NJ mice were utilized from our mouse colony (breeders initially purchased from Jackson Laboratories) and housed in specific pathogen free conditions, under a controlled lighting regime at 21-22 /C14 C. All animal experiments were
+
+performed in accordance with the guidelines of the Children's Hospital of Philadelphia and University of Pennsylvania Institutional Animal Care and Use Committees (CHOP IACUC Protocol #: IAC 23-001364, UPenn PSOM IACUC Protocol #: 806911).
+
+## METHOD DETAILS
+
+## Synthetic RNAs
+
+The synthetic 20 and 50 nt fragments were synthesized by Integrated DNA technologies (IDT) (Table S1). For 3 0 biotinylated RNAs, we performed a purification step using Dynabeads MyOne Streptavidin C1 beads (Invitrogen, Cat. No 65001) followed by TriPure (Roche, Cat. No 11667165001) purification to ensure all RNAs used in the reaction contained biotin.
+
+## NPC differentiation
+
+Prior to NPC differentiation, ESCs were adapted for &gt; 2 weeks to N2B27 serum-free medium consisting of 1:1 mix of neurobasal medium (Gibco, Cat. No 1103049) and DMEM/F12 (Gibco, Cat. No 11320033), supplemented with 1X N2 (Gibco, Cat. No 17502048), 1X B27 (Gibco, Cat. No 17504044), 1% GlutaMAX, 1% non-essential amino acids, 0.5% penicillin/streptomycin, 55 m M b -mercaptoethanol, 100 units/mL LIF, and 2i. NPC differentiation was performed as previously described. 37 Briefly, EpiLCs were induced in N2B27 serum-free medium without 2i and LIF and with 40 m g/mL of BSA and 10 ng/mL bFGF (R&amp;D Systems, Cat. No 3139-FB-025) for 72 h. EpiLCs were then treated with 500 nM SAG (Calbiochem, Cat. No 566661) for 48 h to induce a predictable ventralized identity of the resulting NPCs.
+
+## Tissue collection and isolation
+
+Brains and testes were collected from adult (8-12 weeks old) male FVB/NJ mice, rinsed with PBS, and immediately immersed in TriPure. For sperm isolation, cauda epididymides were dissected from adult (8-12 weeks old) male FVB/NJ mice into a dish with 1.5 mL prewarmed Whitten's media. Caudal fluid was gently squeezed from the tissue and left to incubate in the dish for 10 mins at 37 /C14 C. After incubation, sperm-containing media was transferred to a 1.5 mL tube and sperm was allowed to ''swim up'' for 10 min at 37 /C14 C. The sperm-containing media was collected, leaving the bottom 50 mL and sperm was pelleted by centrifugation (10,000 g, 5 min, 4 /C14 C). The sperm pellet was washed with 1 x PBS and somatic cells were removed by incubation in somatic cell lysis buffer (0.01% SDS and 0.005% Triton-X) for 10 min on ice. After a final wash in PBS, the sperm pellet was snap frozen in liquid nitrogen and stored at -80 /C14 C.
+
+## RNA extraction and fractionation
+
+For ESCs and NPCs, cell pellets were resuspended in 1 mL of TriPure and RNA extracted following standard protocol. DNA was digested with Turbo DNase-I (Invitrogen, Cat. No AM2238) at 37 /C14 Cfor 30 min, RNA was re-purified using TriPure, and resuspended in modBTE (10mM Bis/Tris pH 6.7, 0.1 mM EDTA). For mouse tissues, brains, and testes in TriPure were homogenized using glass beads and clarified by centrifugation at 12,000g for 1 min. RNA was purified as for ESCs and NPCs. For mouse sperm, total RNA was extracted using the same method previously described for epididymosomes. 89 Briefly, sperm were resuspended in 120 m L of water and 66 m L of sperm lysis buffer were added [120mM Tris-HCl (pH 8), 6.4 M Guanidine-HCl, 5% Tween-20, 5% Triton-X100, 120 mM EDTA]. Proteins were digested by adding 6.6 m L of 20 mg/mL proteinase K and 6.6 m L of 1M DTT, followed by incubation at 60 /C14 C for 15 min under 600 rpm constant shaking. Volume was adjusted with water to 400 m L and 400 m L of TriPure were added. RNAwasextracted by adding 120 m L of BCP phase separation reagent (Molecular Research Center, Cat. No BP151) and precipitated with isopropanol. DNA was digested with Turbo DNase-I at 37 /C14 Cfor 30 min, RNA was re-purified using TriPure, and resuspended in modBTE. RNA integrity was verified on 1.5% formaldehyde/agarose gels.
+
+For enrichment of RNAs &lt; 200 nts, the Zymo RNA Clean and Concentrator-5 kit (Zymo Research, Cat. No R1013) was used, starting from 1 m g of total RNA. For enrichment of RNAs &lt; 50 nts, 18 m g of total RNA were run on a denaturing 12% polyacrylamide-urea gel, and the section between 10 and 50 nt markers was excised. Gel pieces were shredded trough pierced 0.5 mL tubes, and RNA was eluted from the gel by overnight incubation in 400 m L RNA elution buffer (10mM Bis/Tris pH 6.7, 300 mM NaCl, 10 mM EDTA) at 4 /C14 C with constant rotation. Eluate was filtered through 5 m mPVDF spin filters (EMD Millipore, Cat. No UFC30SV00), and RNA was precipitated by adding 1 m L glycoblue (Invitrogen, Cat. No AM9516), 40 m L 3 M NaOAc pH 5.2, and 1.1 mL of ice-cold 100% EtOH, followed by incubation at -80 /C14 C for 1 h. RNA was pelleted at 20,000 g for 30 min at 4 /C14 C, washed once with 1 mL of 70% EtOH, once with 1 mL of 80% EtOH, air-dried for 5 min, and resuspended in modBTE buffer.
+
+## Ribosomal RNA depletion
+
+rRNA depletion with the NEB rRNA depletion Kit (New England Biolabs, Cat No E7400S) was performed starting from 1 m g of total ESC RNA and following the standard protocol, with the exception that rRNA-depleted RNA was purified using TriPure instead of SPRI. rRNA depletion with RiboCop (Lexogen, Cat. No 144.24) was performed starting from 500 ng of total ESC RNA and following the standard protocol, except that the rRNA-depleted RNA were first subjected to Turbo DNase digestion (to remove DNA probes) and purified using TriPure. rRNA depletion with the ZapR module of the SMARTer Stranded Total RNA-Seq Kit v3 - Pico Input Mammalian (Takara, Cat No 634485) starting from indexed LIDAR libraries made from 100 ng of total RNA input and following the standard protocol (12 cycles of final PCR).
+
+## LIDAR and 3 0 -LIDAR library preparation
+
+The desired amount of total and fractionated RNAs was diluted to 1 m L and mixed with 0.4 m L of 10 m M LIDAR\_RT\_primer (see Table S1 for all oligonucleotide sequences). To anneal the LIDAR\_RT\_primer to the template RNA, samples were heated to 65 /C14 C for 5 min, then cooled to 4 /C14 C (0.5 /C14 C/s). To initiate RT, 6.28 m L of RT\_mix [25 mM Tris-HCl pH 8.3, 20 mM NaCl, 2.5 mM MgCl2, 8 mM DTT, 5% PEG-8000, 0.5 mM dNTPs, 1 mM GTP, 0.5 U/ m L RNase inhibitor, murine (New England Biolabs, Cat. No M0314S), and 2U/ m L Maxima H-minus RT (Thermo Scientific, Cat. No EP0752); concentrations refer to a final volume of 8 m L] were added and samples were incubated at 25 /C14 C for 10 min. To further promote cDNA synthesis and template switch, temperature was raised to 42 /C14 C, 0.32 m L of 50 m M LIDAR\_TSO\_mix (Table S1) were added, and samples were incubated at 42 /C14 C for 80 min, followed by 10 cycles at 50 /C14 C for 2 min and 42 /C14 C for 2 min, then at 85 /C14 C for 5 min. To pre-amplify and add adapters to cDNA, 12 m L of KAPA\_mix [1X KAPA HiFi HotStart buffer Ready Mix (Roche, Cat. No KK2601), 1 m M LIDAR\_preamp\_f, and 0.1 m M LIDAR\_preamp\_r; concentrations refer to a final volume of 20 m L] were added and samples were incubated with the following PCR cycling conditions: denaturation (95 /C14 C for 3 min), 18 x (98 /C14 C for 20 s, 70 /C14 C for 30 s, 72 /C14 C for 30 s), final extension (72 /C14 C for 5 min). Quality of adapter-containing libraries was assessed by loading 5 m L on a 2% agarose gel. To generate the final libraries, 2 m L of pre-amplified were diluted to 37 m L with 10mM Tris-HCl pH 8, 0.5 m L of each 10 m M custom Nextera indexing primers was added, followed by 12 m L of Q5\_mix [1X Q5 buffer, 0.5 mM dNTPs, 0.02 U/ m L Q5 High-Fidelity DNA Polymerase (New England Biolabs, Cat. No M0491); concentrations refer to a final volume of 50 m L]. Samples were incubated with the following PCR cycling conditions: denaturation (98 /C14 C for 30 sec), 18 x (98 /C14 C for 10 s, 65 /C14 C for 20 s, 72 /C14 C for 20 s), final extension (72 /C14 C for 2 min). Indexed libraries were purified using 2.3X SPRI beads (Beckman Coulter, Cat. No B23319) and eluted in 50 m L of TE buffer (10 mM Tris-HCl pH 8, 1 mM EDTA).
+
+For 3 0 -LIDAR, the LIDAR-3\_RT\_oligo was generated by mixing equimolar amounts of LIDAR\_RT\_primer and LIDAR-3\_RT\_anti-sense (Table S1) followed by heating at 95 /C14 C for 5 min, and a slow cool down to 25 /C14 C (0.1 /C14 C/s). To prepare 3 0 -LIDAR libraries, 1 m L of input RNA was first denatured at 70 /C14 C for 2 min, then temperature was lowered to 50 /C14 C and 0.4 m L of 1 m M LIDAR-3\_RT\_oligo were added. Samples were incubated at 50 /C14 C for further 2 min, then temperature was lowered to 4 /C14 C (0.5 /C14 C/s). To initiate RT, 6.28 m L of RT\_mix were added and samples were incubated at 25 /C14 C for 10 min. To further promote cDNA synthesis and template switch, temperature was raised to 42 /C14 C, 0.32 m L of 50 m M LIDAR\_TSO\_mix were added, and samples were incubated at 50 /C14 C for 80 min, followed by 10 cycles at 55 /C14 C for 2 min and 50 /C14 C for 2 min, then at 85 /C14 C for 5 min. LIDAR-3\_RT\_antisense was digested by adding 1 m L of USER II enzyme (New England Biolabs, Cat. No M5508S) and incubating at 37 /C14 C for 30 min. USER II was heat inactivated by incubation at 65 /C14 C for 10 min. To pre-amplify and add adapters to cDNA, 12 m L of KAPA\_mix (1X KAPA HiFi HotStart buffer ready mix, 2 m M LIDAR\_preamp\_f, and 0.5 m M LIDAR\_preamp\_r; concentrations refer to a final volume of 20 m L) were added and samples were incubated with the following PCR cycling conditions: denaturation (95 /C14 C for 3 min), 6x (98 /C14 C for 20 s, 63 /C14 C for 30 s, 72 /C14 C for 30 s), 12x (98 /C14 C for 20 s, 72 /C14 C for 50 s), final extension (72 /C14 C for 5 min). Quality of adapter-containing libraries was assessed by loading 5 m L on a 2% agarose gel. To generate the final libraries, 2 m L of pre-amplified libraries were diluted to 37 m L with 10 mM Tris-HCl pH 8, 1 m L of each 10 m M custom Nextera indexing primers was added, followed by 12 m L of Q5\_mix (1X Q5 buffer, 0.5 mM dNTPs, 0.02 U/ m L Q5 high-fidelity DNA polymerase; concentrations refer to a final volume of 50 m L]. Samples were incubated with the following PCR cycling conditions: denaturation (98 /C14 C for 30 sec), 7x (98 /C14 C for 10 s, 65 /C14 C for 20 s, 72 /C14 C for 20 s), final extension (72 /C14 C for 5 min). Indexed libraries were purified using 2.4X SPRI beads and eluted in 50 m L of TE buffer (10 mM Tris-HCl pH 8, 1 mM EDTA).
+
+LIDAR and 3 0 -LIDAR libraries were analyzed on a 2% agarose gel and quantified using NEBNext Library Quant Kit for Illumina (New England Biolabs, Cat. No E7630L). Libraries were sequenced on Illumina NextSeq500 or NextSeq1000 instruments.
+
+## Small RNA-seq, mRNA-seq, and SMARTer total RNA-seq library preparation
+
+Small RNA libraries were prepared using the NEBnext small RNA library kit for Illumina (New England Biolabs, Cat. No E7330S), following the standard protocol with the following parameters: 1) 1:2 dilution of 3 0 SR Adaptor, SR RT Primer, and 5 0 SR Adaptor, 2) 15 indexing PCR cycles, 3) cleanup of final libraries with QIAgen MinElute PCR purification kit (QIAgen, Cat. No 28004), followed by a second cleanup with 2X SPRI. Libraries were analyzed on 6% non-denaturing polyacrylamide gels.
+
+For mRNA-seq libraries, polyA RNA was enriched from 2 m g total RNA using Dynabeads Oligo(dT)25 (Invitrogen, Cat. No 61002). polyA-enriched fraction was used for library construction using the NEBnext Ultra II Directional Library Prep Kit for Illumina (New England Biolabs, Cat. No. E7760L), following the standard protocol but using half the reaction volumes recommended. Libraries were analyzed on 2% agarose gels.
+
+For SMARTer total RNA-seq libraries, 100 ng of total ESC RNA were used for library construction using the SMARTer Stranded Total RNA-Seq Kit v3 - Pico Input Mammalian, following the standard protocol.
+
+Both small RNA-seq, mRNA-seq, and SMARTer total RNA-seq libraries were quantified using NEBNext Library Quant Kit for Illumina (New England Biolabs, Cat. No E7630L). Libraries were sequenced on Illumina NextSeq500 or NextSeq1000 instruments.
+
+## Northern blots
+
+3 m g (ESCs) or 5 m g (brain, testis) of total RNA were resolved on a denaturing 15% polyacrylamide-urea gel at 180V for approximately 120 min and stained with SYBR gold. RNA was transferred onto positively charged nylon membranes (Roche, Cat. No 11209299001) using a Bio-Rad Trans-Blot turbo system in 0.5X TBE buffer (44.5 mM Tris, 44.5 mM boric acid, 1 mM EDTA; pH 8.3) for 1.5 h at 0.3 A.
+
+Membranes were quickly rinsed in 20X SSC buffer (3 M NaCl, 0.3 M Na-citrate, pH 7) and crosslinked with 120 mj/cm 2 of 254 nm UV using a Spectrolinker XL-1500. Membranes were pre-hybridized in ULTRAhyb-Oligo buffer (Invitrogen, Cat. No AM8663) at 60 /C14 C for 1 h. Oligo probes (Table S1) were DIG-ylated at their 3 0 termini using Terminal Transferase (New England Biolabs, Cat. No M0315S) using the recommended protocol but substituting dNTPs with DIG-11-ddUTP (Jena Bioscience, Cat. No NU-1619DIGX). DIG-ylated oligo probes were hybridized for 16-18 h at 60 /C14 C at a concentration of 10 pmol/mL in ULTRAhyb-Oligo buffer. Membranes were washed twice with 2X SSC (300 mM NaCl, 30 mM Na-citrate, pH 7) + 0.5% SDS for 30 min at 60 /C14 C. Membranes were blocked in 1X DIG Northern Starter Kit Blocking Solution (Roche, Cat. No 12039672910) in TBS-T (20 mM Tris pH 7, 150 mM NaCl, 0.01% Tween-20) for 1 h at room temperature. Membranes were then incubated with 1:1000 anti-digoxigenin-AP, Fab fragments (Roche, Cat No 11214667001) in 1X blocking solution in TBS-T for 1 h at room temperature. Membranes were washed twice with TBS-T for 15 min, followed by one wash with CDP-Star buffer (100 mM Tris-Cl pH 9.5, 100 mM NaCl) for 5 min at room temperature. Membranes were incubated with 1 mL of CDP-Star chemiluminescent substrate (Sigma-Aldrich, Cat No. C0712-100ML) for 5 min before imaging on an Amersham Imager 600 (GE Healthcare).
+
+## Enrichment of blocked RNAs
+
+Toenrich RNA species with blocked 3 0 , input RNA (300 ng of total ESC RNA, 75 ng of &lt; 200 nts ESC RNA, or 75 ng of total sperm RNA) was first diluted in 38.5 m L of water and heat-denatured at 70 /C14 C for 2 min, followed by quick cool down at 4 /C14 C. To generate 5 0 P and 3 0 OHends, 11.5 m L of PNK mix [1X T4 PNK reaction buffer, 1 mM ATP, 1 U/ m L T4 polynucleotide kinase (PNK; New England Biolabs, Cat no M0201S); concentrations refer to a final volume of 50 m L] were added, and samples were incubated at 37 /C14 Cfor 30 min. 1 mL of TriPure was added, RNA was purified following the standard protocol, and resuspended in 14.5 m L of water. To polyadenylate the end-repaired RNA, 5.5 m L of EPAP mix [1X E. coli Poly(A) Polymerase Reaction Buffer, 1 mM ATP, 0.25 U/ m l E. coli Poly(A) Polymerase (New England Biolabs, Cat. No M0276S), 2 U/ m l RNase inhibitor, murine; concentrations refer to a final volume of 20 m L] were added, and samples were incubated at 37 /C14 C for 10 min. Polyadenylation reaction was stopped by adding EDTA to a final concentration of 10 mM. To deplete polyadenylated RNAs, 100 m L of Dynabeads Oligo(dT)25 were added to the sample and hybridization was carried at 25 /C14 C for 25 min. Flow-through was collected and RNA was purified with TriPure following standard protocol. As control, beadbound RNA was also extracted using the same procedure. Fractionated RNA was analyzed on 9% denaturing (urea) polyacrylamide gels.
+
+## Data processing mRNA-seq
+
+Adapters were trimmed using TrimGalore with default parameters [ver 0.6.4\_dev using Cutadapt version 4.2, https://github.com/ FelixKrueger/TrimGalore and Martin 81 ], retaining reads with a minimum length of 15 bp for both R1 and R2.
+
+## Takara SMARTer
+
+Adapters were trimmed using TrimGalore as above. UMIs were extracted from R2 using umi\_tools extract (ver 1.1.2) 82 with the parameters ''-extract-method=string -bc-pattern=X -bc-pattern2=NNNNNNNN.'' The remainder of the linker was trimmed using cutadapt with parameter ''-u 6.''
+
+## PANDORA-seq
+
+MouseESCandspermPANDORA-seqdatafromShietal. 28 were downloaded from GEO GSE144666. Adapters are already trimmed from these reads, so no further processing was performed before mapping (below).
+
+## NEB
+
+Adapters were trimmed using TrimGalore, retaining paired reads with a minimum length for both R1 and R2 of 5 bp, and R1 singletons with a minimum length of 20 bp ( trim\_galore -length 5 -paired -retain\_unpaired -r 20 -r2 100 ). The 3 0 R2 adapter GATCGTCGG was further trimmed using cutadapt ( cutadapt -A GATCGTCGG -minimum-length 5 -pair-filter=any or cutadapt -a GATCGTCGG-minimum-length 5 ). Paired reads that overlapped by at least 8 bp were connected using COPE (ver 1.2.5) 83 in simple connect mode ( cope -s 33 -m 0 -l 8 ). The connection of read pairs at this step results in some paired reads and some single reads, which were processed in parallel during mapping.
+
+## LIDAR
+
+Reads were processed with TrimGalore and COPE as above, excluding the 3 0 R2 adapter trimming. UMIs were extracted using umi\_ tools extract (ver 1.1.2). 82 Toaccount for the variable length UMIs, three X bases were added to the beginning of each read, then UMIs were extracted with the regex ".*(?&lt;umi\_1&gt;.{7})CG(?P&lt;umi\_2&gt;.{2})AG(?P&lt;umi\_3&gt;.{2})GGG", producing the following patterns for the 4 variable length options, where numbers refer to the six UMI bases:
+
+In this way, 151,552 UMIs can be encoded, taking into account the 4 different variable length options, the 0-3 bases preceding the first UMI bases, and the 6 UMI bases.
+
+After UMI extraction, the remaining constant bases (CGAGGGG) were trimmed from the read using cutadapt ( cutadapt -minimumlength 5 -g CGAGGGG for single reads or cutadapt -minimum-length 5 -g CGAGGGG -pair-filter=any for paired reads), followed by
+
+another trimming step to remove any reads with an occurrence of the TSO or its reverse complement, to stringently remove reads resulting from adapter dimers ( cutadapt -e 3 -b CGTCAGATGTGTATAAGA-GACAG -discard-trimmed ).
+
+## Synthetic RNAs
+
+For samples containing only synthetic RNAs of known sequence, reads were processed as above for LIDAR and NEB, but with a length cutoff of 15 bp required for R1 and R2 during adapter trimming ( trim\_galore-paired -length 15 ). Only reads collapsed with COPE were retained, as R1 and R2 for the 20-nt or 50-nt synthetic RNAs should overlap. LIDAR samples were processed to extract UMIs, as described in the previous sections under Data processing.
+
+The 8N mix (Figures 1D, 1E, S1D, and S1E) contained a mixture of 20 and 50 nts synthetic RNA oligos, with the first 12 or 42 bp constant and a random 8 bp following. Reads capturing the 20 nts RNA were retained if they contained the constant first 12 bp with up to one mismatch and had a total length % 20 bp, while reads capturing the 50 nts RNA were retained if they contained the constant first 42 bp with up to three mismatches and had a total length % 50 bp. RPMs were calculated from all reads that passed the adapter trimming step. SeqLogos were generated for the 8N bases by calculating a position weight matrix for all reads with a base at the positions indicated (Figure S1E).
+
+The 3 0 OH/3 0 blocked oligos mix (Figures 6B and S6A) contained a mixture of 20 and 50 nts synthetic RNAs, some with a 3 0 OHand others with a blocked 3 0 end. After read processing, reads were aligned to a reference composed of the oligo sequences using bowtie2 (ver 2.5.0) 85 with default parameters, and LIDAR samples were deduplicated. Only reads with an insert length R 15 bp were considered. RPMs were calculated from all reads that passed the adapter trimming step.
+
+For the LIDAR vs. 3 0 -LIDAR comparison (Figure S3E), all reads with a fragment length R 15 bp mapping to the 3 0 OH oligos were considered. The plot represents the % of these reads that end at the 3 0 end of the oligo.
+
+## Mapping (mRNA-seq, NEB, LIDAR, SMARTer, and PANDORA)
+
+Reads were mapped in multiple passes to sequentially identify rRNA reads and mapping to ncRNA before mapping to the main genome. Reads mapping at each step were removed before the next step. Only reads with an insert length R 15 bp were retained for downstream analysis.
+
+Locations in the genome predicted to be rRNA repeats were identified using RepeatMasker tracks downloaded from the NCBI Table Browser (group=all talbes, table=rmsk, repClass=rRNA) and masked in the main genome, and a consensus scaffold of rRNA repeats (BK000964.3) was added as a separate scaffold. Genomic loci corresponding to snoRNA and snRNA genes in the GENCODE annotation (ver M27), 90 as well as piRNA loci predicted by piRbase (release v3.0 - gold standard set) 91 and tRNA from GtRNAdb and tRNAscan-SE, as curated in Behrens et al., 25,92,93 were also identified. Locations in the genome corresponding to rRNA and tRNA were masked in the main genome and their sequences were added as separate scaffolds.
+
+For all steps, the paired-end mapping was skipped for reanalysis of PANDORA samples, as these samples were sequenced in a single-end format.
+
+Mapping statistics are reported in Table S2.
+
+## Mispriming analysis
+
+The percentage of reads with a mispriming event (Figure S1H) was defined as the percentage of reads with the UMI sequence (tgNNcgNNagNNGGG) templated in the DNA, indicating a potential TSO strand invasion. 10 Bases 15 nt upstream of the read start were considered, with 0-2 allowed mismatches.
+
+## Read counting for genes and biotypes
+
+Acustom annotation was created using RefSeq Annotation Release 109 (GRCm39) with miRNA removed, and miRNA from miRbase (v22) 96 added; only mature miRNA were included, and coordinates were converted from GRCm38 to GRCm39 using the LiftOver tool. 97 Reads mapping to this annotation were counted using an in-house script based on the GenomicRanges (ver 1.50.2) 87 function SummarizeOverlaps, counting the number of reads overlapping exons of genes with counting mode IntersectionNotEmpty. The command used to compute counts was assay(summarizeOverlaps(annotation,bam\_file, ignore.strand = F, singleEnd = T, param = scanBamParam(flag = scanBamFlag(isSecondaryAlignment = FALSE)), mode = ''IntersectionNotEmpty'')) , with singleEnd = F for paired-end reads. Any reads mapping to the ncRNA (snoRNA, snRNA, piRNA, tRNA, rRNA) scaffolds as described above were counted towards the total for those genes. TPMs were calculated to take library size into consideration.
+
+To determine the % of reads in each sample mapping to each biotype (Figures 1F, 7A, S2D, S2F, S4A, S5A, and S6E), all genes for each biotype were collapsed, alleviating issues where multiple genes of one biotype overlapped each other, making read assignment to the specific gene impossible. Any regions of the genome that contained genes of two different biotypes were marked as ''ambiguous coding'' or ''ambiguous non-coding'' depending on the presence of a protein-coding gene in that region. Reads mapping to the consensus rRNA scaffold BK000964.3 were ignored for these analyses. The biotypes considered ''other'' were pseudogene, transcribed pseudogene, misc\_RNA, guide RNA, antisense RNA, RNase P RNA, telomerase RNA, RNase MRP RNA, V segment, V segment pseudogene, D segment, J segment, C region, J segment pseudogene, Y RNA, scRNA, and ncRNA pseudogene. Reads mapping to each biotypes were counted as above.
+
+ThenumberofsnoRNA,miRNA,andtRNAsdetectedpermillion reads (Figure S2E) was determined by randomly selecting 1 million reads that map to annotated genes for each sample, with proportions reflecting the underlying read count tables, then counting the numberof snoRNAormiRNAwithatleast one read. The number of genes detected in length bins (Figure S2G) was determined by first generating lists of expressed genes in each length bin, considering any gene with an average TPM R 1 among all samples (LIDAR and ligation libraries; &lt; 50 nt, &lt; 200 nt, and total fractions, n = 3 for each condition). The % of expressed genes in each length bin was then calculated, with a threshold of TPM R 1 for detection.
+
+## Differential expression
+
+Differential expression between ESCs and NPCs (Figure 2) was performed using DESeq2 (ver 1.38.3). 88 Genes with an adjusted p value &lt; 0.05 were considered differentially expressed.
+
+Differential expression for tDRs (Figures 4E, 6H, 7E, S3K, and S3L) was performed only considering reads mapped to the indicated tDRs, generating results that indicate differences in frequency of genes between samples.
+
+## tRNA analysis
+
+## Classification of tRNA reads into full-length/fragment types
+
+For each tRNA considered in the analysis, the position of each canonical tRNA base, with numbering as provided in Sprinzl and Vassilenko 98 was annotated using a multiple species alignment of each tRNA to identify canonical bases. Non-templated CCA bases were included in the reference.
+
+Reads mapping to tRNA were classified as full-length, 5 0 tRF, long 5 0 tDR, internal tRF (i-tRF), 5 0 tRF, long 3 0 tDR, or ''other'' reads using the following definitions:
+
+## Misincorporation analysis
+
+For misincorporation analyses (Figures 5A, 5B, 5E, S6D, and S8B), the percentage of reads with a base differing from the reference or known SNP database was computed for each canonical position of each cytosolic RNA, as described above. Only tRNAs with at
+
+least 5 reads assigned in all replicates of at least one condition (for example, LIDAR 200 nt ESC RNA) were included in the heatmaps; positions without coverage were considered NA and not included in mean values plotted on the heatmap.
+
+## Start and end position of fragments
+
+Toplot start and end position of fragments (Figures 3C, S3J, S5D, S5E, S7C, and S8A), all reads considered 5 0 fragments (reads spanning from position 1 at the 5 0 end of tRNA to % canonical base 35) and 3 0 fragments (reads spanning from R canonical base 48 to within 5 bp from the 3 0 end of tRNA) were utilized. The end position in terms of tRNA canonical positions was calculated for 5 0 fragments, while the start position was calculated for 3 0 fragments.
+
+## tRNA coverage by codon
+
+For each tRNA, the coverage for each canonical position, as described above, was calculated to plot coverage by codon (Figures 6D and S5C). Coverage over the variable region was collapsed by taking the mean of all variable positions. In the case of a tRNA missing canonical bases, coverage was calculated as the mean of the closest present canonical bases to the left and right. Coverage was then collapsed by anticodon by taking the sum of all tRNAs with each anticodon and converted to RPMs based on the total number of reads mapped in each sample.
+
+## Data visualization
+
+All computational plots were generated using ggplot2 (ver 3.4.2, H. Wickham. ggplot2: Elegant Graphics for Data Analysis. SpringerVerlag New York, 2016) with viridis (ver 0.6.2, Simon Garnier, Noam Ross, Robert Rudis, Anto ˆ nio P. Camargo, Marco Sciaini, and Ce ´ dric Scherer (2021). Rvision - Colorblind-Friendly Color Maps for R) or scico (ver 1.3.1, Pedersen T, Crameri F (2022). scico: Colour Palettes Based on the Scientific Colour-Maps) color palettes, except heatmaps that were visualized using pheatmap (ver 1.0.12, Kolde R (2019) https://CRAN.R-project.org/package=pheatmap).
+
+SeqLogos were created using the SeqLogo package (ver 1.62.0, Bembom and Ivanek [2022]. 99 \_seqLogo: Sequence logos for DNA sequence alignments).
+
+Genomebrowser images were generated using the Integrated Genomics Viewer (IGV). 100 Whenvisualizing smaller fragments such as tDRs (Figures 3D, 4F, 6I, 7D, S3B, S5F, and S7D) or rRNA-derived fragments (Figure S8E), only paired-end reads that overlapped and could be collapsed to a single read were considered.
+
+## QUANTIFICATION AND STATISTICAL ANALYSIS
+
+All statistical tests used, along with the number of biological replicates analyzed, are indicated in the figure legends. All statistical analyses were performed using R.
+
+## ADDITIONAL RESOURCES
+
+## Detailed protocol
+```
+**[END OF ARTICLE]**
+
+You are a scientific data curator responsible for summarizing experimental designs from research articles. Your task is to identify the 'Control Condition' and the 'Extra Perturbed Condition' from a given paper.
+
+### Instructions:
+1.  **Control Condition:** Identify the baseline state or reference group used for comparison. This is typically the "normal" or unmanipulated sample, such as a wild-type (WT) organism/cell line, a vehicle-treated group (e.g., DMSO), or a mock-transfected group.
+2.  **Extra Perturbed Condition:** Identify the primary experimental variable or intervention being tested against the control. This is the main change introduced to test the paper's hypothesis, such as a gene knockout (KO) or knockdown (KD), a drug treatment, or the overexpression of a protein.
+3.  Focus on the central experiment that defines the paper's main conclusion. If the paper describes multiple experiments, extract the conditions from the one that is most central to the overall story (often a key 'omics' experiment like RNA-seq or a primary functional assay).
+4.  **Be Concise:** Keep your descriptions brief and to the point, mirroring the style of the following examples.
+
+### Few-shot Examples:
+| Publication tittle | Experiment type | Control condition | Extra perturbed condition |
+| :--- | :--- | :--- | :--- |
+| The transcription factor SP1 orchestrates metabolic reprogramming in response to glucose starvation | RNA-seq | HepG2 | SP1 KO |
+| A novel long non-coding RNA, NEBULA, regulates neuronal differentiation in the developing cortex | RNA-seq | Mouse primary cortical neurons | NEBULA KD |
+| Cross-talk between the Hippo and Wnt pathways is mediated by the kinases LATS1 and LATS2 | RNA-seq | MCF-7 | LATS1 KD, LATS2 KD |
+| Epigenetic silencing by PRC2 is essential for maintaining pluripotency in human embryonic stem cells | RNA-seq | H9 hESCs | EZH2-/- |
+| A screen identifies SMARCA4 as a key regulator of the T-cell immune checkpoint response | RNA-seq | Jurkat T cells | SMARCA4 OE |
+| Metformin treatment reverses age-associated transcriptional changes in the liver | RNA-seq | C57BL/6 liver (24 months) | treated with metformin |
+| The RNA helicase DDX3 promotes translation of oncogenic transcripts in glioblastoma | RNA-seq | U-87 MG | DDX3 KO, DDX3 over-expressing |
+| A comprehensive map of alternative splicing events during zebrafish embryogenesis | RNA-seq | Zebrafish embryo (24 hpf) | None |
+| Phase separation of FUS protein drives aberrant stress granule formation in motor neurons | RNA-seq | iPSC-derived motor neurons | FUS P525L mutant |
+| The DNA damage response kinase ATM regulates alternative polyadenylation to control mRNA stability | RNA-seq | U2OS | treated with doxorubicin, ATM inhibitor |
+
+### Your Task:
+Analyze the provided article and extract the required information based on the instructions and examples above. Provide your answer in the following format:
+`| Publication tittle | Experiment type | Control condition | Extra perturbed condition |`
