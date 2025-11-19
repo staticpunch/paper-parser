@@ -1,8 +1,8 @@
 #!/bin/bash
 
-PDF_DIR="./testdata/pdf"
-MD_DIR="./testdata/markdown"
-JSON_DIR="./testdata/structure"
+PDF_DIR="./testdata/casestudies/pdf"
+MD_DIR="./testdata/casestudies/markdown"
+JSON_DIR="./testdata/casestudies/json"
 
 export CUDA_VISIBLE_DEVICES=1
 
